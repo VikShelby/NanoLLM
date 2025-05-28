@@ -1,0 +1,925 @@
+2025-05-28 13:46:22,420 - INFO - Logging configured.
+2025-05-28 13:46:22,420 - INFO - Using device: cuda
+2025-05-28 13:46:26,711 - INFO - Logging configured.
+2025-05-28 13:46:26,712 - INFO - Using device: cuda
+2025-05-28 13:48:10,432 - INFO - Logging configured.
+2025-05-28 13:48:10,432 - INFO - Using device: cuda
+2025-05-28 13:56:40,150 - INFO - Logging configured.
+2025-05-28 13:56:40,150 - INFO - Using device: cuda
+2025-05-28 13:56:40,150 - INFO - Loading tokenized data from data/processed\tokenized_data.pt
+2025-05-28 13:56:40,175 - INFO - Train tokens: 346, Validation tokens: 39
+2025-05-28 13:59:04,893 - INFO - Logging configured.
+2025-05-28 13:59:04,894 - INFO - Using device: cuda
+2025-05-28 13:59:04,894 - INFO - Loading tokenized data from data/processed\tokenized_data.pt
+2025-05-28 13:59:04,921 - INFO - Train tokens: 14310, Validation tokens: 1591
+2025-05-28 13:59:04,921 - INFO - Created train DataLoader with 222 batches of size 64
+2025-05-28 13:59:04,921 - INFO - Created validation DataLoader with 23 batches of size 64
+2025-05-28 13:59:04,922 - INFO - Vocab size from data: 59
+2025-05-28 14:04:34,016 - INFO - Logging configured.
+2025-05-28 14:04:34,017 - INFO - Using device: cuda
+2025-05-28 14:04:34,017 - INFO - Loading tokenized data from data/processed\tokenized_data.pt
+2025-05-28 14:04:34,020 - INFO - Train tokens: 14310, Validation tokens: 1591
+2025-05-28 14:04:34,020 - INFO - Created train DataLoader with 222 batches of size 64
+2025-05-28 14:04:34,022 - INFO - Created validation DataLoader with 23 batches of size 64
+2025-05-28 14:04:34,022 - INFO - Vocab size from data: 59
+2025-05-28 14:04:34,022 - INFO - Sequence length: 128
+2025-05-28 14:07:27,546 - INFO - Logging configured.
+2025-05-28 14:07:27,546 - INFO - Using device: cpu
+2025-05-28 14:07:27,547 - INFO - Loading tokenized data from data/processed\tokenized_data.pt
+2025-05-28 14:07:27,550 - INFO - Train tokens: 14310, Validation tokens: 1591
+2025-05-28 14:07:27,550 - INFO - Created train DataLoader with 222 batches of size 64
+2025-05-28 14:07:27,550 - INFO - Created validation DataLoader with 23 batches of size 64
+2025-05-28 14:07:27,550 - INFO - Vocab size from data: 59
+2025-05-28 14:07:27,550 - INFO - Sequence length: 128
+2025-05-28 14:07:27,683 - INFO - Model built.
+2025-05-28 14:07:27,683 - INFO - Model config: {'vocab_size': 59, 'd_model': 128, 'n_heads': 4, 'n_layers': 3, 'dropout': 0.1, 'seq_length': 128}
+2025-05-28 14:07:29,961 - INFO - Logging configured.
+2025-05-28 14:07:29,961 - INFO - Logging configured.
+2025-05-28 14:07:29,962 - INFO - Starting epoch 1...
+2025-05-28 14:07:29,962 - INFO - Starting epoch 1...
+2025-05-28 14:15:38,742 - INFO - Logging configured.
+2025-05-28 14:15:38,742 - INFO - Using device: cpu
+2025-05-28 14:15:38,743 - INFO - Loading tokenized data from data/processed\tokenized_data.pt
+2025-05-28 14:15:38,747 - INFO - Train tokens: 14310, Validation tokens: 1591
+2025-05-28 14:15:38,747 - INFO - Created train DataLoader with 222 batches of size 64
+2025-05-28 14:15:38,747 - INFO - Created validation DataLoader with 23 batches of size 64
+2025-05-28 14:15:38,747 - INFO - Vocab size from data: 59
+2025-05-28 14:15:38,747 - INFO - Sequence length: 128
+2025-05-28 14:15:38,758 - INFO - Model built.
+2025-05-28 14:15:38,758 - INFO - Model config: {'vocab_size': 59, 'd_model': 128, 'n_heads': 4, 'n_layers': 3, 'dropout': 0.1, 'seq_length': 128}
+2025-05-28 14:15:40,061 - INFO - Logging configured.
+2025-05-28 14:15:40,061 - INFO - Logging configured.
+2025-05-28 14:15:40,062 - INFO - Starting epoch 1...
+2025-05-28 14:15:40,062 - INFO - Starting epoch 1...
+2025-05-28 14:15:44,783 - INFO - Epoch 1, Batch 10/222, Loss: 3.0315, Time per batch: 0.4721s
+2025-05-28 14:15:44,783 - INFO - Epoch 1, Batch 10/222, Loss: 3.0315, Time per batch: 0.4721s
+2025-05-28 14:15:49,297 - INFO - Epoch 1, Batch 20/222, Loss: 2.7019, Time per batch: 0.4617s
+2025-05-28 14:15:49,297 - INFO - Epoch 1, Batch 20/222, Loss: 2.7019, Time per batch: 0.4617s
+2025-05-28 14:15:53,892 - INFO - Epoch 1, Batch 30/222, Loss: 2.5766, Time per batch: 0.4610s
+2025-05-28 14:15:53,892 - INFO - Epoch 1, Batch 30/222, Loss: 2.5766, Time per batch: 0.4610s
+2025-05-28 14:15:58,548 - INFO - Epoch 1, Batch 40/222, Loss: 2.4448, Time per batch: 0.4621s
+2025-05-28 14:15:58,548 - INFO - Epoch 1, Batch 40/222, Loss: 2.4448, Time per batch: 0.4621s
+2025-05-28 14:16:03,127 - INFO - Epoch 1, Batch 50/222, Loss: 2.4450, Time per batch: 0.4613s
+2025-05-28 14:16:03,127 - INFO - Epoch 1, Batch 50/222, Loss: 2.4450, Time per batch: 0.4613s
+2025-05-28 14:16:07,770 - INFO - Epoch 1, Batch 60/222, Loss: 2.4166, Time per batch: 0.4618s
+2025-05-28 14:16:07,770 - INFO - Epoch 1, Batch 60/222, Loss: 2.4166, Time per batch: 0.4618s
+2025-05-28 14:16:12,325 - INFO - Epoch 1, Batch 70/222, Loss: 2.3971, Time per batch: 0.4609s
+2025-05-28 14:16:12,325 - INFO - Epoch 1, Batch 70/222, Loss: 2.3971, Time per batch: 0.4609s
+2025-05-28 14:16:17,002 - INFO - Epoch 1, Batch 80/222, Loss: 2.3835, Time per batch: 0.4617s
+2025-05-28 14:16:17,002 - INFO - Epoch 1, Batch 80/222, Loss: 2.3835, Time per batch: 0.4617s
+2025-05-28 14:16:21,657 - INFO - Epoch 1, Batch 90/222, Loss: 2.3489, Time per batch: 0.4622s
+2025-05-28 14:16:21,657 - INFO - Epoch 1, Batch 90/222, Loss: 2.3489, Time per batch: 0.4622s
+2025-05-28 14:16:26,728 - INFO - Epoch 1, Batch 100/222, Loss: 2.3038, Time per batch: 0.4667s
+2025-05-28 14:16:26,728 - INFO - Epoch 1, Batch 100/222, Loss: 2.3038, Time per batch: 0.4667s
+2025-05-28 14:16:31,610 - INFO - Epoch 1, Batch 110/222, Loss: 2.2953, Time per batch: 0.4686s
+2025-05-28 14:16:31,610 - INFO - Epoch 1, Batch 110/222, Loss: 2.2953, Time per batch: 0.4686s
+2025-05-28 14:16:36,906 - INFO - Epoch 1, Batch 120/222, Loss: 2.2887, Time per batch: 0.4737s
+2025-05-28 14:16:36,906 - INFO - Epoch 1, Batch 120/222, Loss: 2.2887, Time per batch: 0.4737s
+2025-05-28 14:16:41,945 - INFO - Epoch 1, Batch 130/222, Loss: 2.2835, Time per batch: 0.4760s
+2025-05-28 14:16:41,945 - INFO - Epoch 1, Batch 130/222, Loss: 2.2835, Time per batch: 0.4760s
+2025-05-28 14:16:47,442 - INFO - Epoch 1, Batch 140/222, Loss: 2.2477, Time per batch: 0.4813s
+2025-05-28 14:16:47,442 - INFO - Epoch 1, Batch 140/222, Loss: 2.2477, Time per batch: 0.4813s
+2025-05-28 14:16:52,782 - INFO - Epoch 1, Batch 150/222, Loss: 2.2284, Time per batch: 0.4848s
+2025-05-28 14:16:52,782 - INFO - Epoch 1, Batch 150/222, Loss: 2.2284, Time per batch: 0.4848s
+2025-05-28 14:16:57,407 - INFO - Epoch 1, Batch 160/222, Loss: 2.2094, Time per batch: 0.4834s
+2025-05-28 14:16:57,407 - INFO - Epoch 1, Batch 160/222, Loss: 2.2094, Time per batch: 0.4834s
+2025-05-28 14:17:02,768 - INFO - Epoch 1, Batch 170/222, Loss: 2.2080, Time per batch: 0.4865s
+2025-05-28 14:17:02,768 - INFO - Epoch 1, Batch 170/222, Loss: 2.2080, Time per batch: 0.4865s
+2025-05-28 14:17:08,243 - INFO - Epoch 1, Batch 180/222, Loss: 2.1637, Time per batch: 0.4899s
+2025-05-28 14:17:08,243 - INFO - Epoch 1, Batch 180/222, Loss: 2.1637, Time per batch: 0.4899s
+2025-05-28 14:17:13,566 - INFO - Epoch 1, Batch 190/222, Loss: 2.1301, Time per batch: 0.4921s
+2025-05-28 14:17:13,566 - INFO - Epoch 1, Batch 190/222, Loss: 2.1301, Time per batch: 0.4921s
+2025-05-28 14:17:18,988 - INFO - Epoch 1, Batch 200/222, Loss: 2.1106, Time per batch: 0.4946s
+2025-05-28 14:17:18,988 - INFO - Epoch 1, Batch 200/222, Loss: 2.1106, Time per batch: 0.4946s
+2025-05-28 14:17:24,111 - INFO - Epoch 1, Batch 210/222, Loss: 2.0834, Time per batch: 0.4955s
+2025-05-28 14:17:24,111 - INFO - Epoch 1, Batch 210/222, Loss: 2.0834, Time per batch: 0.4955s
+2025-05-28 14:17:29,329 - INFO - Epoch 1, Batch 220/222, Loss: 2.0279, Time per batch: 0.4967s
+2025-05-28 14:17:29,329 - INFO - Epoch 1, Batch 220/222, Loss: 2.0279, Time per batch: 0.4967s
+2025-05-28 14:17:30,132 - INFO - Epoch 1 finished. Avg Training Loss: 2.3704
+2025-05-28 14:17:30,132 - INFO - Epoch 1 finished. Avg Training Loss: 2.3704
+2025-05-28 14:17:30,133 - INFO - Starting evaluation...
+2025-05-28 14:17:30,133 - INFO - Starting evaluation...
+2025-05-28 14:17:32,273 - INFO - Evaluation Loss: 2.1961
+2025-05-28 14:17:32,273 - INFO - Evaluation Loss: 2.1961
+2025-05-28 14:17:32,273 - INFO - Validation loss improved. Best loss: 2.1961
+2025-05-28 14:17:32,273 - INFO - Validation loss improved. Best loss: 2.1961
+2025-05-28 14:17:32,273 - INFO - Starting epoch 2...
+2025-05-28 14:17:32,273 - INFO - Starting epoch 2...
+2025-05-28 14:17:37,489 - INFO - Epoch 2, Batch 10/222, Loss: 1.9920, Time per batch: 0.5215s
+2025-05-28 14:17:37,489 - INFO - Epoch 2, Batch 10/222, Loss: 1.9920, Time per batch: 0.5215s
+2025-05-28 14:17:42,644 - INFO - Epoch 2, Batch 20/222, Loss: 1.9448, Time per batch: 0.5185s
+2025-05-28 14:17:42,644 - INFO - Epoch 2, Batch 20/222, Loss: 1.9448, Time per batch: 0.5185s
+2025-05-28 14:17:48,034 - INFO - Epoch 2, Batch 30/222, Loss: 1.8723, Time per batch: 0.5253s
+2025-05-28 14:17:48,034 - INFO - Epoch 2, Batch 30/222, Loss: 1.8723, Time per batch: 0.5253s
+2025-05-28 14:17:53,407 - INFO - Epoch 2, Batch 40/222, Loss: 1.8109, Time per batch: 0.5283s
+2025-05-28 14:17:53,407 - INFO - Epoch 2, Batch 40/222, Loss: 1.8109, Time per batch: 0.5283s
+2025-05-28 14:17:58,749 - INFO - Epoch 2, Batch 50/222, Loss: 1.7918, Time per batch: 0.5295s
+2025-05-28 14:17:58,749 - INFO - Epoch 2, Batch 50/222, Loss: 1.7918, Time per batch: 0.5295s
+2025-05-28 14:18:04,117 - INFO - Epoch 2, Batch 60/222, Loss: 1.7255, Time per batch: 0.5307s
+2025-05-28 14:18:04,117 - INFO - Epoch 2, Batch 60/222, Loss: 1.7255, Time per batch: 0.5307s
+2025-05-28 14:18:10,041 - INFO - Epoch 2, Batch 70/222, Loss: 1.7229, Time per batch: 0.5395s
+2025-05-28 14:18:10,041 - INFO - Epoch 2, Batch 70/222, Loss: 1.7229, Time per batch: 0.5395s
+2025-05-28 14:18:15,563 - INFO - Epoch 2, Batch 80/222, Loss: 1.6648, Time per batch: 0.5411s
+2025-05-28 14:18:15,563 - INFO - Epoch 2, Batch 80/222, Loss: 1.6648, Time per batch: 0.5411s
+2025-05-28 14:18:20,901 - INFO - Epoch 2, Batch 90/222, Loss: 1.5863, Time per batch: 0.5403s
+2025-05-28 14:18:20,901 - INFO - Epoch 2, Batch 90/222, Loss: 1.5863, Time per batch: 0.5403s
+2025-05-28 14:18:26,351 - INFO - Epoch 2, Batch 100/222, Loss: 1.5147, Time per batch: 0.5408s
+2025-05-28 14:18:26,351 - INFO - Epoch 2, Batch 100/222, Loss: 1.5147, Time per batch: 0.5408s
+2025-05-28 14:18:31,781 - INFO - Epoch 2, Batch 110/222, Loss: 1.4661, Time per batch: 0.5410s
+2025-05-28 14:18:31,781 - INFO - Epoch 2, Batch 110/222, Loss: 1.4661, Time per batch: 0.5410s
+2025-05-28 14:18:37,356 - INFO - Epoch 2, Batch 120/222, Loss: 1.4276, Time per batch: 0.5424s
+2025-05-28 14:18:37,356 - INFO - Epoch 2, Batch 120/222, Loss: 1.4276, Time per batch: 0.5424s
+2025-05-28 14:18:42,782 - INFO - Epoch 2, Batch 130/222, Loss: 1.3667, Time per batch: 0.5424s
+2025-05-28 14:18:42,782 - INFO - Epoch 2, Batch 130/222, Loss: 1.3667, Time per batch: 0.5424s
+2025-05-28 14:18:48,088 - INFO - Epoch 2, Batch 140/222, Loss: 1.3297, Time per batch: 0.5415s
+2025-05-28 14:18:48,088 - INFO - Epoch 2, Batch 140/222, Loss: 1.3297, Time per batch: 0.5415s
+2025-05-28 14:18:53,280 - INFO - Epoch 2, Batch 150/222, Loss: 1.2641, Time per batch: 0.5400s
+2025-05-28 14:18:53,280 - INFO - Epoch 2, Batch 150/222, Loss: 1.2641, Time per batch: 0.5400s
+2025-05-28 14:18:58,438 - INFO - Epoch 2, Batch 160/222, Loss: 1.1492, Time per batch: 0.5385s
+2025-05-28 14:18:58,438 - INFO - Epoch 2, Batch 160/222, Loss: 1.1492, Time per batch: 0.5385s
+2025-05-28 14:19:04,399 - INFO - Epoch 2, Batch 170/222, Loss: 1.1394, Time per batch: 0.5419s
+2025-05-28 14:19:04,399 - INFO - Epoch 2, Batch 170/222, Loss: 1.1394, Time per batch: 0.5419s
+2025-05-28 14:19:10,196 - INFO - Epoch 2, Batch 180/222, Loss: 1.0670, Time per batch: 0.5440s
+2025-05-28 14:19:10,196 - INFO - Epoch 2, Batch 180/222, Loss: 1.0670, Time per batch: 0.5440s
+2025-05-28 14:19:15,941 - INFO - Epoch 2, Batch 190/222, Loss: 1.0748, Time per batch: 0.5456s
+2025-05-28 14:19:15,941 - INFO - Epoch 2, Batch 190/222, Loss: 1.0748, Time per batch: 0.5456s
+2025-05-28 14:19:21,317 - INFO - Epoch 2, Batch 200/222, Loss: 0.9947, Time per batch: 0.5452s
+2025-05-28 14:19:21,317 - INFO - Epoch 2, Batch 200/222, Loss: 0.9947, Time per batch: 0.5452s
+2025-05-28 14:19:26,342 - INFO - Epoch 2, Batch 210/222, Loss: 0.9277, Time per batch: 0.5432s
+2025-05-28 14:19:26,342 - INFO - Epoch 2, Batch 210/222, Loss: 0.9277, Time per batch: 0.5432s
+2025-05-28 14:19:31,373 - INFO - Epoch 2, Batch 220/222, Loss: 0.9176, Time per batch: 0.5414s
+2025-05-28 14:19:31,373 - INFO - Epoch 2, Batch 220/222, Loss: 0.9176, Time per batch: 0.5414s
+2025-05-28 14:19:32,204 - INFO - Epoch 2 finished. Avg Training Loss: 1.4652
+2025-05-28 14:19:32,204 - INFO - Epoch 2 finished. Avg Training Loss: 1.4652
+2025-05-28 14:19:32,204 - INFO - Starting evaluation...
+2025-05-28 14:19:32,204 - INFO - Starting evaluation...
+2025-05-28 14:19:34,446 - INFO - Evaluation Loss: 0.9287
+2025-05-28 14:19:34,446 - INFO - Evaluation Loss: 0.9287
+2025-05-28 14:19:34,446 - INFO - Validation loss improved. Best loss: 0.9287
+2025-05-28 14:19:34,446 - INFO - Validation loss improved. Best loss: 0.9287
+2025-05-28 14:19:34,447 - INFO - Starting epoch 3...
+2025-05-28 14:19:34,447 - INFO - Starting epoch 3...
+2025-05-28 14:19:39,533 - INFO - Epoch 3, Batch 10/222, Loss: 0.8451, Time per batch: 0.5086s
+2025-05-28 14:19:39,533 - INFO - Epoch 3, Batch 10/222, Loss: 0.8451, Time per batch: 0.5086s
+2025-05-28 14:19:45,585 - INFO - Epoch 3, Batch 20/222, Loss: 0.8132, Time per batch: 0.5569s
+2025-05-28 14:19:45,585 - INFO - Epoch 3, Batch 20/222, Loss: 0.8132, Time per batch: 0.5569s
+2025-05-28 14:19:50,485 - INFO - Epoch 3, Batch 30/222, Loss: 0.7514, Time per batch: 0.5346s
+2025-05-28 14:19:50,485 - INFO - Epoch 3, Batch 30/222, Loss: 0.7514, Time per batch: 0.5346s
+2025-05-28 14:19:55,493 - INFO - Epoch 3, Batch 40/222, Loss: 0.7141, Time per batch: 0.5262s
+2025-05-28 14:19:55,493 - INFO - Epoch 3, Batch 40/222, Loss: 0.7141, Time per batch: 0.5262s
+2025-05-28 14:20:01,021 - INFO - Epoch 3, Batch 50/222, Loss: 0.6545, Time per batch: 0.5315s
+2025-05-28 14:20:01,021 - INFO - Epoch 3, Batch 50/222, Loss: 0.6545, Time per batch: 0.5315s
+2025-05-28 14:20:06,641 - INFO - Epoch 3, Batch 60/222, Loss: 0.6462, Time per batch: 0.5366s
+2025-05-28 14:20:06,641 - INFO - Epoch 3, Batch 60/222, Loss: 0.6462, Time per batch: 0.5366s
+2025-05-28 14:20:12,197 - INFO - Epoch 3, Batch 70/222, Loss: 0.6021, Time per batch: 0.5393s
+2025-05-28 14:20:12,197 - INFO - Epoch 3, Batch 70/222, Loss: 0.6021, Time per batch: 0.5393s
+2025-05-28 14:20:17,589 - INFO - Epoch 3, Batch 80/222, Loss: 0.6075, Time per batch: 0.5393s
+2025-05-28 14:20:17,589 - INFO - Epoch 3, Batch 80/222, Loss: 0.6075, Time per batch: 0.5393s
+2025-05-28 14:20:23,036 - INFO - Epoch 3, Batch 90/222, Loss: 0.5417, Time per batch: 0.5399s
+2025-05-28 14:20:23,036 - INFO - Epoch 3, Batch 90/222, Loss: 0.5417, Time per batch: 0.5399s
+2025-05-28 14:20:28,465 - INFO - Epoch 3, Batch 100/222, Loss: 0.5580, Time per batch: 0.5402s
+2025-05-28 14:20:28,465 - INFO - Epoch 3, Batch 100/222, Loss: 0.5580, Time per batch: 0.5402s
+2025-05-28 14:20:33,897 - INFO - Epoch 3, Batch 110/222, Loss: 0.4702, Time per batch: 0.5404s
+2025-05-28 14:20:33,897 - INFO - Epoch 3, Batch 110/222, Loss: 0.4702, Time per batch: 0.5404s
+2025-05-28 14:20:39,245 - INFO - Epoch 3, Batch 120/222, Loss: 0.4861, Time per batch: 0.5400s
+2025-05-28 14:20:39,245 - INFO - Epoch 3, Batch 120/222, Loss: 0.4861, Time per batch: 0.5400s
+2025-05-28 14:20:45,274 - INFO - Epoch 3, Batch 130/222, Loss: 0.4700, Time per batch: 0.5448s
+2025-05-28 14:20:45,274 - INFO - Epoch 3, Batch 130/222, Loss: 0.4700, Time per batch: 0.5448s
+2025-05-28 14:20:51,839 - INFO - Epoch 3, Batch 140/222, Loss: 0.4413, Time per batch: 0.5528s
+2025-05-28 14:20:51,839 - INFO - Epoch 3, Batch 140/222, Loss: 0.4413, Time per batch: 0.5528s
+2025-05-28 14:20:57,497 - INFO - Epoch 3, Batch 150/222, Loss: 0.4322, Time per batch: 0.5537s
+2025-05-28 14:20:57,497 - INFO - Epoch 3, Batch 150/222, Loss: 0.4322, Time per batch: 0.5537s
+2025-05-28 14:21:02,932 - INFO - Epoch 3, Batch 160/222, Loss: 0.4114, Time per batch: 0.5530s
+2025-05-28 14:21:02,932 - INFO - Epoch 3, Batch 160/222, Loss: 0.4114, Time per batch: 0.5530s
+2025-05-28 14:21:08,242 - INFO - Epoch 3, Batch 170/222, Loss: 0.3845, Time per batch: 0.5517s
+2025-05-28 14:21:08,242 - INFO - Epoch 3, Batch 170/222, Loss: 0.3845, Time per batch: 0.5517s
+2025-05-28 14:21:12,995 - INFO - Epoch 3, Batch 180/222, Loss: 0.3715, Time per batch: 0.5475s
+2025-05-28 14:21:12,995 - INFO - Epoch 3, Batch 180/222, Loss: 0.3715, Time per batch: 0.5475s
+2025-05-28 14:21:17,616 - INFO - Epoch 3, Batch 190/222, Loss: 0.3877, Time per batch: 0.5430s
+2025-05-28 14:21:17,616 - INFO - Epoch 3, Batch 190/222, Loss: 0.3877, Time per batch: 0.5430s
+2025-05-28 14:21:22,265 - INFO - Epoch 3, Batch 200/222, Loss: 0.3598, Time per batch: 0.5391s
+2025-05-28 14:21:22,265 - INFO - Epoch 3, Batch 200/222, Loss: 0.3598, Time per batch: 0.5391s
+2025-05-28 14:21:26,915 - INFO - Epoch 3, Batch 210/222, Loss: 0.3357, Time per batch: 0.5356s
+2025-05-28 14:21:26,915 - INFO - Epoch 3, Batch 210/222, Loss: 0.3357, Time per batch: 0.5356s
+2025-05-28 14:21:31,407 - INFO - Epoch 3, Batch 220/222, Loss: 0.3502, Time per batch: 0.5316s
+2025-05-28 14:21:31,407 - INFO - Epoch 3, Batch 220/222, Loss: 0.3502, Time per batch: 0.5316s
+2025-05-28 14:21:32,164 - INFO - Epoch 3 finished. Avg Training Loss: 0.5365
+2025-05-28 14:21:32,164 - INFO - Epoch 3 finished. Avg Training Loss: 0.5365
+2025-05-28 14:21:32,165 - INFO - Starting evaluation...
+2025-05-28 14:21:32,165 - INFO - Starting evaluation...
+2025-05-28 14:21:34,224 - INFO - Evaluation Loss: 0.1731
+2025-05-28 14:21:34,224 - INFO - Evaluation Loss: 0.1731
+2025-05-28 14:21:34,224 - INFO - Validation loss improved. Best loss: 0.1731
+2025-05-28 14:21:34,224 - INFO - Validation loss improved. Best loss: 0.1731
+2025-05-28 14:21:34,225 - INFO - Starting epoch 4...
+2025-05-28 14:21:34,225 - INFO - Starting epoch 4...
+2025-05-28 14:21:38,852 - INFO - Epoch 4, Batch 10/222, Loss: 0.3279, Time per batch: 0.4627s
+2025-05-28 14:21:38,852 - INFO - Epoch 4, Batch 10/222, Loss: 0.3279, Time per batch: 0.4627s
+2025-05-28 14:21:43,581 - INFO - Epoch 4, Batch 20/222, Loss: 0.3359, Time per batch: 0.4678s
+2025-05-28 14:21:43,581 - INFO - Epoch 4, Batch 20/222, Loss: 0.3359, Time per batch: 0.4678s
+2025-05-28 14:21:48,147 - INFO - Epoch 4, Batch 30/222, Loss: 0.3100, Time per batch: 0.4641s
+2025-05-28 14:21:48,147 - INFO - Epoch 4, Batch 30/222, Loss: 0.3100, Time per batch: 0.4641s
+2025-05-28 14:21:52,748 - INFO - Epoch 4, Batch 40/222, Loss: 0.3149, Time per batch: 0.4631s
+2025-05-28 14:21:52,748 - INFO - Epoch 4, Batch 40/222, Loss: 0.3149, Time per batch: 0.4631s
+2025-05-28 14:21:57,508 - INFO - Epoch 4, Batch 50/222, Loss: 0.2898, Time per batch: 0.4657s
+2025-05-28 14:21:57,508 - INFO - Epoch 4, Batch 50/222, Loss: 0.2898, Time per batch: 0.4657s
+2025-05-28 14:22:02,148 - INFO - Epoch 4, Batch 60/222, Loss: 0.3032, Time per batch: 0.4654s
+2025-05-28 14:22:02,148 - INFO - Epoch 4, Batch 60/222, Loss: 0.3032, Time per batch: 0.4654s
+2025-05-28 14:22:06,820 - INFO - Epoch 4, Batch 70/222, Loss: 0.2937, Time per batch: 0.4656s
+2025-05-28 14:22:06,820 - INFO - Epoch 4, Batch 70/222, Loss: 0.2937, Time per batch: 0.4656s
+2025-05-28 14:22:11,375 - INFO - Epoch 4, Batch 80/222, Loss: 0.2870, Time per batch: 0.4644s
+2025-05-28 14:22:11,375 - INFO - Epoch 4, Batch 80/222, Loss: 0.2870, Time per batch: 0.4644s
+2025-05-28 14:22:16,058 - INFO - Epoch 4, Batch 90/222, Loss: 0.2848, Time per batch: 0.4648s
+2025-05-28 14:22:16,058 - INFO - Epoch 4, Batch 90/222, Loss: 0.2848, Time per batch: 0.4648s
+2025-05-28 14:22:20,631 - INFO - Epoch 4, Batch 100/222, Loss: 0.2615, Time per batch: 0.4641s
+2025-05-28 14:22:20,631 - INFO - Epoch 4, Batch 100/222, Loss: 0.2615, Time per batch: 0.4641s
+2025-05-28 14:22:25,315 - INFO - Epoch 4, Batch 110/222, Loss: 0.2642, Time per batch: 0.4645s
+2025-05-28 14:22:25,315 - INFO - Epoch 4, Batch 110/222, Loss: 0.2642, Time per batch: 0.4645s
+2025-05-28 14:22:29,896 - INFO - Epoch 4, Batch 120/222, Loss: 0.2420, Time per batch: 0.4639s
+2025-05-28 14:22:29,896 - INFO - Epoch 4, Batch 120/222, Loss: 0.2420, Time per batch: 0.4639s
+2025-05-28 14:22:34,464 - INFO - Epoch 4, Batch 130/222, Loss: 0.2464, Time per batch: 0.4634s
+2025-05-28 14:22:34,464 - INFO - Epoch 4, Batch 130/222, Loss: 0.2464, Time per batch: 0.4634s
+2025-05-28 14:22:39,018 - INFO - Epoch 4, Batch 140/222, Loss: 0.2580, Time per batch: 0.4628s
+2025-05-28 14:22:39,018 - INFO - Epoch 4, Batch 140/222, Loss: 0.2580, Time per batch: 0.4628s
+2025-05-28 14:22:43,593 - INFO - Epoch 4, Batch 150/222, Loss: 0.2589, Time per batch: 0.4625s
+2025-05-28 14:22:43,593 - INFO - Epoch 4, Batch 150/222, Loss: 0.2589, Time per batch: 0.4625s
+2025-05-28 14:22:48,268 - INFO - Epoch 4, Batch 160/222, Loss: 0.2379, Time per batch: 0.4628s
+2025-05-28 14:22:48,268 - INFO - Epoch 4, Batch 160/222, Loss: 0.2379, Time per batch: 0.4628s
+2025-05-28 14:22:52,869 - INFO - Epoch 4, Batch 170/222, Loss: 0.2582, Time per batch: 0.4626s
+2025-05-28 14:22:52,869 - INFO - Epoch 4, Batch 170/222, Loss: 0.2582, Time per batch: 0.4626s
+2025-05-28 14:22:57,428 - INFO - Epoch 4, Batch 180/222, Loss: 0.2397, Time per batch: 0.4622s
+2025-05-28 14:22:57,428 - INFO - Epoch 4, Batch 180/222, Loss: 0.2397, Time per batch: 0.4622s
+2025-05-28 14:23:02,129 - INFO - Epoch 4, Batch 190/222, Loss: 0.2222, Time per batch: 0.4627s
+2025-05-28 14:23:02,129 - INFO - Epoch 4, Batch 190/222, Loss: 0.2222, Time per batch: 0.4627s
+2025-05-28 14:23:06,819 - INFO - Epoch 4, Batch 200/222, Loss: 0.2301, Time per batch: 0.4630s
+2025-05-28 14:23:06,819 - INFO - Epoch 4, Batch 200/222, Loss: 0.2301, Time per batch: 0.4630s
+2025-05-28 14:23:11,557 - INFO - Epoch 4, Batch 210/222, Loss: 0.2273, Time per batch: 0.4635s
+2025-05-28 14:23:11,557 - INFO - Epoch 4, Batch 210/222, Loss: 0.2273, Time per batch: 0.4635s
+2025-05-28 14:23:16,173 - INFO - Epoch 4, Batch 220/222, Loss: 0.2226, Time per batch: 0.4634s
+2025-05-28 14:23:16,173 - INFO - Epoch 4, Batch 220/222, Loss: 0.2226, Time per batch: 0.4634s
+2025-05-28 14:23:16,907 - INFO - Epoch 4 finished. Avg Training Loss: 0.2715
+2025-05-28 14:23:16,907 - INFO - Epoch 4 finished. Avg Training Loss: 0.2715
+2025-05-28 14:23:16,908 - INFO - Starting evaluation...
+2025-05-28 14:23:16,908 - INFO - Starting evaluation...
+2025-05-28 14:23:18,933 - INFO - Evaluation Loss: 0.1145
+2025-05-28 14:23:18,933 - INFO - Evaluation Loss: 0.1145
+2025-05-28 14:23:18,933 - INFO - Validation loss improved. Best loss: 0.1145
+2025-05-28 14:23:18,933 - INFO - Validation loss improved. Best loss: 0.1145
+2025-05-28 14:23:18,933 - INFO - Starting epoch 5...
+2025-05-28 14:23:18,933 - INFO - Starting epoch 5...
+2025-05-28 14:23:23,552 - INFO - Epoch 5, Batch 10/222, Loss: 0.2353, Time per batch: 0.4619s
+2025-05-28 14:23:23,552 - INFO - Epoch 5, Batch 10/222, Loss: 0.2353, Time per batch: 0.4619s
+2025-05-28 14:23:28,127 - INFO - Epoch 5, Batch 20/222, Loss: 0.2180, Time per batch: 0.4597s
+2025-05-28 14:23:28,127 - INFO - Epoch 5, Batch 20/222, Loss: 0.2180, Time per batch: 0.4597s
+2025-05-28 14:23:32,794 - INFO - Epoch 5, Batch 30/222, Loss: 0.2135, Time per batch: 0.4620s
+2025-05-28 14:23:32,794 - INFO - Epoch 5, Batch 30/222, Loss: 0.2135, Time per batch: 0.4620s
+2025-05-28 14:23:37,345 - INFO - Epoch 5, Batch 40/222, Loss: 0.2057, Time per batch: 0.4603s
+2025-05-28 14:23:37,345 - INFO - Epoch 5, Batch 40/222, Loss: 0.2057, Time per batch: 0.4603s
+2025-05-28 14:23:41,904 - INFO - Epoch 5, Batch 50/222, Loss: 0.2006, Time per batch: 0.4594s
+2025-05-28 14:23:41,904 - INFO - Epoch 5, Batch 50/222, Loss: 0.2006, Time per batch: 0.4594s
+2025-05-28 14:23:46,488 - INFO - Epoch 5, Batch 60/222, Loss: 0.2055, Time per batch: 0.4592s
+2025-05-28 14:23:46,488 - INFO - Epoch 5, Batch 60/222, Loss: 0.2055, Time per batch: 0.4592s
+2025-05-28 14:23:51,032 - INFO - Epoch 5, Batch 70/222, Loss: 0.2020, Time per batch: 0.4586s
+2025-05-28 14:23:51,032 - INFO - Epoch 5, Batch 70/222, Loss: 0.2020, Time per batch: 0.4586s
+2025-05-28 14:23:55,669 - INFO - Epoch 5, Batch 80/222, Loss: 0.2043, Time per batch: 0.4592s
+2025-05-28 14:23:55,669 - INFO - Epoch 5, Batch 80/222, Loss: 0.2043, Time per batch: 0.4592s
+2025-05-28 14:24:00,317 - INFO - Epoch 5, Batch 90/222, Loss: 0.2016, Time per batch: 0.4598s
+2025-05-28 14:24:00,317 - INFO - Epoch 5, Batch 90/222, Loss: 0.2016, Time per batch: 0.4598s
+2025-05-28 14:24:04,988 - INFO - Epoch 5, Batch 100/222, Loss: 0.2034, Time per batch: 0.4605s
+2025-05-28 14:24:04,988 - INFO - Epoch 5, Batch 100/222, Loss: 0.2034, Time per batch: 0.4605s
+2025-05-28 14:24:09,620 - INFO - Epoch 5, Batch 110/222, Loss: 0.2052, Time per batch: 0.4608s
+2025-05-28 14:24:09,620 - INFO - Epoch 5, Batch 110/222, Loss: 0.2052, Time per batch: 0.4608s
+2025-05-28 14:24:14,274 - INFO - Epoch 5, Batch 120/222, Loss: 0.2013, Time per batch: 0.4612s
+2025-05-28 14:24:14,274 - INFO - Epoch 5, Batch 120/222, Loss: 0.2013, Time per batch: 0.4612s
+2025-05-28 14:24:18,855 - INFO - Epoch 5, Batch 130/222, Loss: 0.2098, Time per batch: 0.4609s
+2025-05-28 14:24:18,855 - INFO - Epoch 5, Batch 130/222, Loss: 0.2098, Time per batch: 0.4609s
+2025-05-28 14:24:23,429 - INFO - Epoch 5, Batch 140/222, Loss: 0.1922, Time per batch: 0.4607s
+2025-05-28 14:24:23,429 - INFO - Epoch 5, Batch 140/222, Loss: 0.1922, Time per batch: 0.4607s
+2025-05-28 14:24:28,010 - INFO - Epoch 5, Batch 150/222, Loss: 0.1916, Time per batch: 0.4605s
+2025-05-28 14:24:28,010 - INFO - Epoch 5, Batch 150/222, Loss: 0.1916, Time per batch: 0.4605s
+2025-05-28 14:24:33,174 - INFO - Epoch 5, Batch 160/222, Loss: 0.1876, Time per batch: 0.4640s
+2025-05-28 14:24:33,174 - INFO - Epoch 5, Batch 160/222, Loss: 0.1876, Time per batch: 0.4640s
+2025-05-28 14:24:38,180 - INFO - Epoch 5, Batch 170/222, Loss: 0.1767, Time per batch: 0.4662s
+2025-05-28 14:24:38,180 - INFO - Epoch 5, Batch 170/222, Loss: 0.1767, Time per batch: 0.4662s
+2025-05-28 14:24:43,424 - INFO - Epoch 5, Batch 180/222, Loss: 0.2024, Time per batch: 0.4694s
+2025-05-28 14:24:43,424 - INFO - Epoch 5, Batch 180/222, Loss: 0.2024, Time per batch: 0.4694s
+2025-05-28 14:24:48,692 - INFO - Epoch 5, Batch 190/222, Loss: 0.1763, Time per batch: 0.4724s
+2025-05-28 14:24:48,692 - INFO - Epoch 5, Batch 190/222, Loss: 0.1763, Time per batch: 0.4724s
+2025-05-28 14:24:54,044 - INFO - Epoch 5, Batch 200/222, Loss: 0.1786, Time per batch: 0.4756s
+2025-05-28 14:24:54,044 - INFO - Epoch 5, Batch 200/222, Loss: 0.1786, Time per batch: 0.4756s
+2025-05-28 14:24:59,322 - INFO - Epoch 5, Batch 210/222, Loss: 0.1702, Time per batch: 0.4780s
+2025-05-28 14:24:59,322 - INFO - Epoch 5, Batch 210/222, Loss: 0.1702, Time per batch: 0.4780s
+2025-05-28 14:25:04,630 - INFO - Epoch 5, Batch 220/222, Loss: 0.1902, Time per batch: 0.4804s
+2025-05-28 14:25:04,630 - INFO - Epoch 5, Batch 220/222, Loss: 0.1902, Time per batch: 0.4804s
+2025-05-28 14:25:05,499 - INFO - Epoch 5 finished. Avg Training Loss: 0.1973
+2025-05-28 14:25:05,499 - INFO - Epoch 5 finished. Avg Training Loss: 0.1973
+2025-05-28 14:25:05,500 - INFO - Starting evaluation...
+2025-05-28 14:25:05,500 - INFO - Starting evaluation...
+2025-05-28 14:25:08,107 - INFO - Evaluation Loss: 0.0991
+2025-05-28 14:25:08,107 - INFO - Evaluation Loss: 0.0991
+2025-05-28 14:25:08,107 - INFO - Validation loss improved. Best loss: 0.0991
+2025-05-28 14:25:08,107 - INFO - Validation loss improved. Best loss: 0.0991
+2025-05-28 14:25:08,108 - INFO - Starting epoch 6...
+2025-05-28 14:25:08,108 - INFO - Starting epoch 6...
+2025-05-28 14:25:13,784 - INFO - Epoch 6, Batch 10/222, Loss: 0.1709, Time per batch: 0.5675s
+2025-05-28 14:25:13,784 - INFO - Epoch 6, Batch 10/222, Loss: 0.1709, Time per batch: 0.5675s
+2025-05-28 14:25:19,557 - INFO - Epoch 6, Batch 20/222, Loss: 0.1851, Time per batch: 0.5725s
+2025-05-28 14:25:19,557 - INFO - Epoch 6, Batch 20/222, Loss: 0.1851, Time per batch: 0.5725s
+2025-05-28 14:25:25,201 - INFO - Epoch 6, Batch 30/222, Loss: 0.1744, Time per batch: 0.5698s
+2025-05-28 14:25:25,201 - INFO - Epoch 6, Batch 30/222, Loss: 0.1744, Time per batch: 0.5698s
+2025-05-28 14:25:30,808 - INFO - Epoch 6, Batch 40/222, Loss: 0.1707, Time per batch: 0.5675s
+2025-05-28 14:25:30,808 - INFO - Epoch 6, Batch 40/222, Loss: 0.1707, Time per batch: 0.5675s
+2025-05-28 14:25:36,209 - INFO - Epoch 6, Batch 50/222, Loss: 0.1672, Time per batch: 0.5620s
+2025-05-28 14:25:36,209 - INFO - Epoch 6, Batch 50/222, Loss: 0.1672, Time per batch: 0.5620s
+2025-05-28 14:25:41,639 - INFO - Epoch 6, Batch 60/222, Loss: 0.1607, Time per batch: 0.5589s
+2025-05-28 14:25:41,639 - INFO - Epoch 6, Batch 60/222, Loss: 0.1607, Time per batch: 0.5589s
+2025-05-28 14:25:46,876 - INFO - Epoch 6, Batch 70/222, Loss: 0.1602, Time per batch: 0.5538s
+2025-05-28 14:25:46,876 - INFO - Epoch 6, Batch 70/222, Loss: 0.1602, Time per batch: 0.5538s
+2025-05-28 14:25:52,280 - INFO - Epoch 6, Batch 80/222, Loss: 0.1607, Time per batch: 0.5522s
+2025-05-28 14:25:52,280 - INFO - Epoch 6, Batch 80/222, Loss: 0.1607, Time per batch: 0.5522s
+2025-05-28 14:25:57,787 - INFO - Epoch 6, Batch 90/222, Loss: 0.1585, Time per batch: 0.5520s
+2025-05-28 14:25:57,787 - INFO - Epoch 6, Batch 90/222, Loss: 0.1585, Time per batch: 0.5520s
+2025-05-28 14:26:03,219 - INFO - Epoch 6, Batch 100/222, Loss: 0.1683, Time per batch: 0.5511s
+2025-05-28 14:26:03,219 - INFO - Epoch 6, Batch 100/222, Loss: 0.1683, Time per batch: 0.5511s
+2025-05-28 14:26:08,925 - INFO - Epoch 6, Batch 110/222, Loss: 0.1686, Time per batch: 0.5529s
+2025-05-28 14:26:08,925 - INFO - Epoch 6, Batch 110/222, Loss: 0.1686, Time per batch: 0.5529s
+2025-05-28 14:26:14,466 - INFO - Epoch 6, Batch 120/222, Loss: 0.1595, Time per batch: 0.5530s
+2025-05-28 14:26:14,466 - INFO - Epoch 6, Batch 120/222, Loss: 0.1595, Time per batch: 0.5530s
+2025-05-28 14:26:20,690 - INFO - Epoch 6, Batch 130/222, Loss: 0.1597, Time per batch: 0.5583s
+2025-05-28 14:26:20,690 - INFO - Epoch 6, Batch 130/222, Loss: 0.1597, Time per batch: 0.5583s
+2025-05-28 14:26:26,705 - INFO - Epoch 6, Batch 140/222, Loss: 0.1580, Time per batch: 0.5614s
+2025-05-28 14:26:26,705 - INFO - Epoch 6, Batch 140/222, Loss: 0.1580, Time per batch: 0.5614s
+2025-05-28 14:26:32,545 - INFO - Epoch 6, Batch 150/222, Loss: 0.1455, Time per batch: 0.5629s
+2025-05-28 14:26:32,545 - INFO - Epoch 6, Batch 150/222, Loss: 0.1455, Time per batch: 0.5629s
+2025-05-28 14:26:38,282 - INFO - Epoch 6, Batch 160/222, Loss: 0.1547, Time per batch: 0.5636s
+2025-05-28 14:26:38,282 - INFO - Epoch 6, Batch 160/222, Loss: 0.1547, Time per batch: 0.5636s
+2025-05-28 14:26:43,870 - INFO - Epoch 6, Batch 170/222, Loss: 0.1600, Time per batch: 0.5633s
+2025-05-28 14:26:43,870 - INFO - Epoch 6, Batch 170/222, Loss: 0.1600, Time per batch: 0.5633s
+2025-05-28 14:26:49,143 - INFO - Epoch 6, Batch 180/222, Loss: 0.1508, Time per batch: 0.5613s
+2025-05-28 14:26:49,143 - INFO - Epoch 6, Batch 180/222, Loss: 0.1508, Time per batch: 0.5613s
+2025-05-28 14:26:54,424 - INFO - Epoch 6, Batch 190/222, Loss: 0.1583, Time per batch: 0.5596s
+2025-05-28 14:26:54,424 - INFO - Epoch 6, Batch 190/222, Loss: 0.1583, Time per batch: 0.5596s
+2025-05-28 14:26:59,679 - INFO - Epoch 6, Batch 200/222, Loss: 0.1459, Time per batch: 0.5579s
+2025-05-28 14:26:59,679 - INFO - Epoch 6, Batch 200/222, Loss: 0.1459, Time per batch: 0.5579s
+2025-05-28 14:27:05,101 - INFO - Epoch 6, Batch 210/222, Loss: 0.1479, Time per batch: 0.5571s
+2025-05-28 14:27:05,101 - INFO - Epoch 6, Batch 210/222, Loss: 0.1479, Time per batch: 0.5571s
+2025-05-28 14:27:10,659 - INFO - Epoch 6, Batch 220/222, Loss: 0.1525, Time per batch: 0.5571s
+2025-05-28 14:27:10,659 - INFO - Epoch 6, Batch 220/222, Loss: 0.1525, Time per batch: 0.5571s
+2025-05-28 14:27:11,511 - INFO - Epoch 6 finished. Avg Training Loss: 0.1651
+2025-05-28 14:27:11,511 - INFO - Epoch 6 finished. Avg Training Loss: 0.1651
+2025-05-28 14:27:11,512 - INFO - Starting evaluation...
+2025-05-28 14:27:11,512 - INFO - Starting evaluation...
+2025-05-28 14:27:13,737 - INFO - Evaluation Loss: 0.0897
+2025-05-28 14:27:13,737 - INFO - Evaluation Loss: 0.0897
+2025-05-28 14:27:13,738 - INFO - Validation loss improved. Best loss: 0.0897
+2025-05-28 14:27:13,738 - INFO - Validation loss improved. Best loss: 0.0897
+2025-05-28 14:27:13,738 - INFO - Starting epoch 7...
+2025-05-28 14:27:13,738 - INFO - Starting epoch 7...
+2025-05-28 14:27:18,663 - INFO - Epoch 7, Batch 10/222, Loss: 0.1502, Time per batch: 0.4925s
+2025-05-28 14:27:18,663 - INFO - Epoch 7, Batch 10/222, Loss: 0.1502, Time per batch: 0.4925s
+2025-05-28 14:27:23,581 - INFO - Epoch 7, Batch 20/222, Loss: 0.1407, Time per batch: 0.4922s
+2025-05-28 14:27:23,581 - INFO - Epoch 7, Batch 20/222, Loss: 0.1407, Time per batch: 0.4922s
+2025-05-28 14:27:28,472 - INFO - Epoch 7, Batch 30/222, Loss: 0.1433, Time per batch: 0.4911s
+2025-05-28 14:27:28,472 - INFO - Epoch 7, Batch 30/222, Loss: 0.1433, Time per batch: 0.4911s
+2025-05-28 14:27:33,342 - INFO - Epoch 7, Batch 40/222, Loss: 0.1437, Time per batch: 0.4901s
+2025-05-28 14:27:33,342 - INFO - Epoch 7, Batch 40/222, Loss: 0.1437, Time per batch: 0.4901s
+2025-05-28 14:27:38,455 - INFO - Epoch 7, Batch 50/222, Loss: 0.1464, Time per batch: 0.4943s
+2025-05-28 14:27:38,455 - INFO - Epoch 7, Batch 50/222, Loss: 0.1464, Time per batch: 0.4943s
+2025-05-28 14:27:43,605 - INFO - Epoch 7, Batch 60/222, Loss: 0.1553, Time per batch: 0.4978s
+2025-05-28 14:27:43,605 - INFO - Epoch 7, Batch 60/222, Loss: 0.1553, Time per batch: 0.4978s
+2025-05-28 14:27:49,953 - INFO - Epoch 7, Batch 70/222, Loss: 0.1525, Time per batch: 0.5174s
+2025-05-28 14:27:49,953 - INFO - Epoch 7, Batch 70/222, Loss: 0.1525, Time per batch: 0.5174s
+2025-05-28 14:27:55,815 - INFO - Epoch 7, Batch 80/222, Loss: 0.1519, Time per batch: 0.5260s
+2025-05-28 14:27:55,815 - INFO - Epoch 7, Batch 80/222, Loss: 0.1519, Time per batch: 0.5260s
+2025-05-28 14:28:01,417 - INFO - Epoch 7, Batch 90/222, Loss: 0.1484, Time per batch: 0.5298s
+2025-05-28 14:28:01,417 - INFO - Epoch 7, Batch 90/222, Loss: 0.1484, Time per batch: 0.5298s
+2025-05-28 14:28:06,830 - INFO - Epoch 7, Batch 100/222, Loss: 0.1396, Time per batch: 0.5309s
+2025-05-28 14:28:06,830 - INFO - Epoch 7, Batch 100/222, Loss: 0.1396, Time per batch: 0.5309s
+2025-05-28 14:28:12,893 - INFO - Epoch 7, Batch 110/222, Loss: 0.1569, Time per batch: 0.5378s
+2025-05-28 14:28:12,893 - INFO - Epoch 7, Batch 110/222, Loss: 0.1569, Time per batch: 0.5378s
+2025-05-28 14:28:18,696 - INFO - Epoch 7, Batch 120/222, Loss: 0.1373, Time per batch: 0.5413s
+2025-05-28 14:28:18,696 - INFO - Epoch 7, Batch 120/222, Loss: 0.1373, Time per batch: 0.5413s
+2025-05-28 14:28:24,140 - INFO - Epoch 7, Batch 130/222, Loss: 0.1516, Time per batch: 0.5416s
+2025-05-28 14:28:24,140 - INFO - Epoch 7, Batch 130/222, Loss: 0.1516, Time per batch: 0.5416s
+2025-05-28 14:28:29,265 - INFO - Epoch 7, Batch 140/222, Loss: 0.1391, Time per batch: 0.5395s
+2025-05-28 14:28:29,265 - INFO - Epoch 7, Batch 140/222, Loss: 0.1391, Time per batch: 0.5395s
+2025-05-28 14:28:34,414 - INFO - Epoch 7, Batch 150/222, Loss: 0.1529, Time per batch: 0.5378s
+2025-05-28 14:28:34,414 - INFO - Epoch 7, Batch 150/222, Loss: 0.1529, Time per batch: 0.5378s
+2025-05-28 14:28:39,459 - INFO - Epoch 7, Batch 160/222, Loss: 0.1476, Time per batch: 0.5358s
+2025-05-28 14:28:39,459 - INFO - Epoch 7, Batch 160/222, Loss: 0.1476, Time per batch: 0.5358s
+2025-05-28 14:28:44,683 - INFO - Epoch 7, Batch 170/222, Loss: 0.1435, Time per batch: 0.5350s
+2025-05-28 14:28:44,683 - INFO - Epoch 7, Batch 170/222, Loss: 0.1435, Time per batch: 0.5350s
+2025-05-28 14:28:50,148 - INFO - Epoch 7, Batch 180/222, Loss: 0.1374, Time per batch: 0.5356s
+2025-05-28 14:28:50,148 - INFO - Epoch 7, Batch 180/222, Loss: 0.1374, Time per batch: 0.5356s
+2025-05-28 14:28:55,608 - INFO - Epoch 7, Batch 190/222, Loss: 0.1438, Time per batch: 0.5362s
+2025-05-28 14:28:55,608 - INFO - Epoch 7, Batch 190/222, Loss: 0.1438, Time per batch: 0.5362s
+2025-05-28 14:29:01,198 - INFO - Epoch 7, Batch 200/222, Loss: 0.1421, Time per batch: 0.5373s
+2025-05-28 14:29:01,198 - INFO - Epoch 7, Batch 200/222, Loss: 0.1421, Time per batch: 0.5373s
+2025-05-28 14:29:06,764 - INFO - Epoch 7, Batch 210/222, Loss: 0.1254, Time per batch: 0.5382s
+2025-05-28 14:29:06,764 - INFO - Epoch 7, Batch 210/222, Loss: 0.1254, Time per batch: 0.5382s
+2025-05-28 14:29:11,914 - INFO - Epoch 7, Batch 220/222, Loss: 0.1405, Time per batch: 0.5372s
+2025-05-28 14:29:11,914 - INFO - Epoch 7, Batch 220/222, Loss: 0.1405, Time per batch: 0.5372s
+2025-05-28 14:29:12,692 - INFO - Epoch 7 finished. Avg Training Loss: 0.1452
+2025-05-28 14:29:12,692 - INFO - Epoch 7 finished. Avg Training Loss: 0.1452
+2025-05-28 14:29:12,692 - INFO - Starting evaluation...
+2025-05-28 14:29:12,692 - INFO - Starting evaluation...
+2025-05-28 14:29:14,831 - INFO - Evaluation Loss: 0.0815
+2025-05-28 14:29:14,831 - INFO - Evaluation Loss: 0.0815
+2025-05-28 14:29:14,832 - INFO - Validation loss improved. Best loss: 0.0815
+2025-05-28 14:29:14,832 - INFO - Validation loss improved. Best loss: 0.0815
+2025-05-28 14:29:14,832 - INFO - Starting epoch 8...
+2025-05-28 14:29:14,832 - INFO - Starting epoch 8...
+2025-05-28 14:29:19,836 - INFO - Epoch 8, Batch 10/222, Loss: 0.1373, Time per batch: 0.5004s
+2025-05-28 14:29:19,836 - INFO - Epoch 8, Batch 10/222, Loss: 0.1373, Time per batch: 0.5004s
+2025-05-28 14:29:24,878 - INFO - Epoch 8, Batch 20/222, Loss: 0.1373, Time per batch: 0.5023s
+2025-05-28 14:29:24,878 - INFO - Epoch 8, Batch 20/222, Loss: 0.1373, Time per batch: 0.5023s
+2025-05-28 14:29:29,869 - INFO - Epoch 8, Batch 30/222, Loss: 0.1344, Time per batch: 0.5012s
+2025-05-28 14:29:29,869 - INFO - Epoch 8, Batch 30/222, Loss: 0.1344, Time per batch: 0.5012s
+2025-05-28 14:29:35,246 - INFO - Epoch 8, Batch 40/222, Loss: 0.1429, Time per batch: 0.5104s
+2025-05-28 14:29:35,246 - INFO - Epoch 8, Batch 40/222, Loss: 0.1429, Time per batch: 0.5104s
+2025-05-28 14:29:40,651 - INFO - Epoch 8, Batch 50/222, Loss: 0.1349, Time per batch: 0.5164s
+2025-05-28 14:29:40,651 - INFO - Epoch 8, Batch 50/222, Loss: 0.1349, Time per batch: 0.5164s
+2025-05-28 14:29:46,028 - INFO - Epoch 8, Batch 60/222, Loss: 0.1419, Time per batch: 0.5199s
+2025-05-28 14:29:46,028 - INFO - Epoch 8, Batch 60/222, Loss: 0.1419, Time per batch: 0.5199s
+2025-05-28 14:29:51,692 - INFO - Epoch 8, Batch 70/222, Loss: 0.1347, Time per batch: 0.5266s
+2025-05-28 14:29:51,692 - INFO - Epoch 8, Batch 70/222, Loss: 0.1347, Time per batch: 0.5266s
+2025-05-28 14:29:57,958 - INFO - Epoch 8, Batch 80/222, Loss: 0.1263, Time per batch: 0.5391s
+2025-05-28 14:29:57,958 - INFO - Epoch 8, Batch 80/222, Loss: 0.1263, Time per batch: 0.5391s
+2025-05-28 14:30:03,639 - INFO - Epoch 8, Batch 90/222, Loss: 0.1374, Time per batch: 0.5423s
+2025-05-28 14:30:03,639 - INFO - Epoch 8, Batch 90/222, Loss: 0.1374, Time per batch: 0.5423s
+2025-05-28 14:30:09,298 - INFO - Epoch 8, Batch 100/222, Loss: 0.1397, Time per batch: 0.5447s
+2025-05-28 14:30:09,298 - INFO - Epoch 8, Batch 100/222, Loss: 0.1397, Time per batch: 0.5447s
+2025-05-28 14:30:14,977 - INFO - Epoch 8, Batch 110/222, Loss: 0.1319, Time per batch: 0.5468s
+2025-05-28 14:30:14,977 - INFO - Epoch 8, Batch 110/222, Loss: 0.1319, Time per batch: 0.5468s
+2025-05-28 14:30:20,687 - INFO - Epoch 8, Batch 120/222, Loss: 0.1311, Time per batch: 0.5488s
+2025-05-28 14:30:20,687 - INFO - Epoch 8, Batch 120/222, Loss: 0.1311, Time per batch: 0.5488s
+2025-05-28 14:30:26,592 - INFO - Epoch 8, Batch 130/222, Loss: 0.1356, Time per batch: 0.5520s
+2025-05-28 14:30:26,592 - INFO - Epoch 8, Batch 130/222, Loss: 0.1356, Time per batch: 0.5520s
+2025-05-28 14:30:32,201 - INFO - Epoch 8, Batch 140/222, Loss: 0.1330, Time per batch: 0.5526s
+2025-05-28 14:30:32,201 - INFO - Epoch 8, Batch 140/222, Loss: 0.1330, Time per batch: 0.5526s
+2025-05-28 14:30:37,579 - INFO - Epoch 8, Batch 150/222, Loss: 0.1352, Time per batch: 0.5516s
+2025-05-28 14:30:37,579 - INFO - Epoch 8, Batch 150/222, Loss: 0.1352, Time per batch: 0.5516s
+2025-05-28 14:30:43,096 - INFO - Epoch 8, Batch 160/222, Loss: 0.1327, Time per batch: 0.5516s
+2025-05-28 14:30:43,096 - INFO - Epoch 8, Batch 160/222, Loss: 0.1327, Time per batch: 0.5516s
+2025-05-28 14:30:48,509 - INFO - Epoch 8, Batch 170/222, Loss: 0.1281, Time per batch: 0.5510s
+2025-05-28 14:30:48,509 - INFO - Epoch 8, Batch 170/222, Loss: 0.1281, Time per batch: 0.5510s
+2025-05-28 14:30:53,850 - INFO - Epoch 8, Batch 180/222, Loss: 0.1405, Time per batch: 0.5501s
+2025-05-28 14:30:53,850 - INFO - Epoch 8, Batch 180/222, Loss: 0.1405, Time per batch: 0.5501s
+2025-05-28 14:30:59,430 - INFO - Epoch 8, Batch 190/222, Loss: 0.1381, Time per batch: 0.5505s
+2025-05-28 14:30:59,430 - INFO - Epoch 8, Batch 190/222, Loss: 0.1381, Time per batch: 0.5505s
+2025-05-28 14:31:04,763 - INFO - Epoch 8, Batch 200/222, Loss: 0.1210, Time per batch: 0.5497s
+2025-05-28 14:31:04,763 - INFO - Epoch 8, Batch 200/222, Loss: 0.1210, Time per batch: 0.5497s
+2025-05-28 14:31:10,147 - INFO - Epoch 8, Batch 210/222, Loss: 0.1350, Time per batch: 0.5491s
+2025-05-28 14:31:10,147 - INFO - Epoch 8, Batch 210/222, Loss: 0.1350, Time per batch: 0.5491s
+2025-05-28 14:31:15,571 - INFO - Epoch 8, Batch 220/222, Loss: 0.1279, Time per batch: 0.5488s
+2025-05-28 14:31:15,571 - INFO - Epoch 8, Batch 220/222, Loss: 0.1279, Time per batch: 0.5488s
+2025-05-28 14:31:16,451 - INFO - Epoch 8 finished. Avg Training Loss: 0.1332
+2025-05-28 14:31:16,451 - INFO - Epoch 8 finished. Avg Training Loss: 0.1332
+2025-05-28 14:31:16,451 - INFO - Starting evaluation...
+2025-05-28 14:31:16,451 - INFO - Starting evaluation...
+2025-05-28 14:31:18,584 - INFO - Evaluation Loss: 0.0807
+2025-05-28 14:31:18,584 - INFO - Evaluation Loss: 0.0807
+2025-05-28 14:31:18,585 - INFO - Validation loss improved. Best loss: 0.0807
+2025-05-28 14:31:18,585 - INFO - Validation loss improved. Best loss: 0.0807
+2025-05-28 14:31:18,585 - INFO - Starting epoch 9...
+2025-05-28 14:31:18,585 - INFO - Starting epoch 9...
+2025-05-28 14:31:24,183 - INFO - Epoch 9, Batch 10/222, Loss: 0.1221, Time per batch: 0.5597s
+2025-05-28 14:31:24,183 - INFO - Epoch 9, Batch 10/222, Loss: 0.1221, Time per batch: 0.5597s
+2025-05-28 14:31:28,977 - INFO - Epoch 9, Batch 20/222, Loss: 0.1226, Time per batch: 0.5196s
+2025-05-28 14:31:28,977 - INFO - Epoch 9, Batch 20/222, Loss: 0.1226, Time per batch: 0.5196s
+2025-05-28 14:31:33,861 - INFO - Epoch 9, Batch 30/222, Loss: 0.1267, Time per batch: 0.5092s
+2025-05-28 14:31:33,861 - INFO - Epoch 9, Batch 30/222, Loss: 0.1267, Time per batch: 0.5092s
+2025-05-28 14:31:39,001 - INFO - Epoch 9, Batch 40/222, Loss: 0.1247, Time per batch: 0.5104s
+2025-05-28 14:31:39,001 - INFO - Epoch 9, Batch 40/222, Loss: 0.1247, Time per batch: 0.5104s
+2025-05-28 14:31:44,257 - INFO - Epoch 9, Batch 50/222, Loss: 0.1252, Time per batch: 0.5134s
+2025-05-28 14:31:44,257 - INFO - Epoch 9, Batch 50/222, Loss: 0.1252, Time per batch: 0.5134s
+2025-05-28 14:31:49,482 - INFO - Epoch 9, Batch 60/222, Loss: 0.1364, Time per batch: 0.5149s
+2025-05-28 14:31:49,482 - INFO - Epoch 9, Batch 60/222, Loss: 0.1364, Time per batch: 0.5149s
+2025-05-28 14:31:54,510 - INFO - Epoch 9, Batch 70/222, Loss: 0.1220, Time per batch: 0.5132s
+2025-05-28 14:31:54,510 - INFO - Epoch 9, Batch 70/222, Loss: 0.1220, Time per batch: 0.5132s
+2025-05-28 14:31:59,695 - INFO - Epoch 9, Batch 80/222, Loss: 0.1286, Time per batch: 0.5139s
+2025-05-28 14:31:59,695 - INFO - Epoch 9, Batch 80/222, Loss: 0.1286, Time per batch: 0.5139s
+2025-05-28 14:32:05,139 - INFO - Epoch 9, Batch 90/222, Loss: 0.1349, Time per batch: 0.5173s
+2025-05-28 14:32:05,139 - INFO - Epoch 9, Batch 90/222, Loss: 0.1349, Time per batch: 0.5173s
+2025-05-28 14:32:11,333 - INFO - Epoch 9, Batch 100/222, Loss: 0.1243, Time per batch: 0.5275s
+2025-05-28 14:32:11,333 - INFO - Epoch 9, Batch 100/222, Loss: 0.1243, Time per batch: 0.5275s
+2025-05-28 14:32:16,715 - INFO - Epoch 9, Batch 110/222, Loss: 0.1211, Time per batch: 0.5285s
+2025-05-28 14:32:16,715 - INFO - Epoch 9, Batch 110/222, Loss: 0.1211, Time per batch: 0.5285s
+2025-05-28 14:32:22,086 - INFO - Epoch 9, Batch 120/222, Loss: 0.1262, Time per batch: 0.5292s
+2025-05-28 14:32:22,086 - INFO - Epoch 9, Batch 120/222, Loss: 0.1262, Time per batch: 0.5292s
+2025-05-28 14:32:27,601 - INFO - Epoch 9, Batch 130/222, Loss: 0.1332, Time per batch: 0.5309s
+2025-05-28 14:32:27,601 - INFO - Epoch 9, Batch 130/222, Loss: 0.1332, Time per batch: 0.5309s
+2025-05-28 14:32:32,963 - INFO - Epoch 9, Batch 140/222, Loss: 0.1244, Time per batch: 0.5313s
+2025-05-28 14:32:32,963 - INFO - Epoch 9, Batch 140/222, Loss: 0.1244, Time per batch: 0.5313s
+2025-05-28 14:32:38,053 - INFO - Epoch 9, Batch 150/222, Loss: 0.1188, Time per batch: 0.5298s
+2025-05-28 14:32:38,053 - INFO - Epoch 9, Batch 150/222, Loss: 0.1188, Time per batch: 0.5298s
+2025-05-28 14:32:43,037 - INFO - Epoch 9, Batch 160/222, Loss: 0.1182, Time per batch: 0.5278s
+2025-05-28 14:32:43,037 - INFO - Epoch 9, Batch 160/222, Loss: 0.1182, Time per batch: 0.5278s
+2025-05-28 14:32:47,711 - INFO - Epoch 9, Batch 170/222, Loss: 0.1189, Time per batch: 0.5243s
+2025-05-28 14:32:47,711 - INFO - Epoch 9, Batch 170/222, Loss: 0.1189, Time per batch: 0.5243s
+2025-05-28 14:32:52,790 - INFO - Epoch 9, Batch 180/222, Loss: 0.1267, Time per batch: 0.5234s
+2025-05-28 14:32:52,790 - INFO - Epoch 9, Batch 180/222, Loss: 0.1267, Time per batch: 0.5234s
+2025-05-28 14:32:58,234 - INFO - Epoch 9, Batch 190/222, Loss: 0.1299, Time per batch: 0.5245s
+2025-05-28 14:32:58,234 - INFO - Epoch 9, Batch 190/222, Loss: 0.1299, Time per batch: 0.5245s
+2025-05-28 14:33:04,080 - INFO - Epoch 9, Batch 200/222, Loss: 0.1223, Time per batch: 0.5275s
+2025-05-28 14:33:04,080 - INFO - Epoch 9, Batch 200/222, Loss: 0.1223, Time per batch: 0.5275s
+2025-05-28 14:33:10,290 - INFO - Epoch 9, Batch 210/222, Loss: 0.1137, Time per batch: 0.5319s
+2025-05-28 14:33:10,290 - INFO - Epoch 9, Batch 210/222, Loss: 0.1137, Time per batch: 0.5319s
+2025-05-28 14:33:15,822 - INFO - Epoch 9, Batch 220/222, Loss: 0.1201, Time per batch: 0.5329s
+2025-05-28 14:33:15,822 - INFO - Epoch 9, Batch 220/222, Loss: 0.1201, Time per batch: 0.5329s
+2025-05-28 14:33:16,705 - INFO - Epoch 9 finished. Avg Training Loss: 0.1244
+2025-05-28 14:33:16,705 - INFO - Epoch 9 finished. Avg Training Loss: 0.1244
+2025-05-28 14:33:16,706 - INFO - Starting evaluation...
+2025-05-28 14:33:16,706 - INFO - Starting evaluation...
+2025-05-28 14:33:18,990 - INFO - Evaluation Loss: 0.0787
+2025-05-28 14:33:18,990 - INFO - Evaluation Loss: 0.0787
+2025-05-28 14:33:18,991 - INFO - Validation loss improved. Best loss: 0.0787
+2025-05-28 14:33:18,991 - INFO - Validation loss improved. Best loss: 0.0787
+2025-05-28 14:33:18,991 - INFO - Starting epoch 10...
+2025-05-28 14:33:18,991 - INFO - Starting epoch 10...
+2025-05-28 14:33:24,399 - INFO - Epoch 10, Batch 10/222, Loss: 0.1249, Time per batch: 0.5408s
+2025-05-28 14:33:24,399 - INFO - Epoch 10, Batch 10/222, Loss: 0.1249, Time per batch: 0.5408s
+2025-05-28 14:33:29,893 - INFO - Epoch 10, Batch 20/222, Loss: 0.1222, Time per batch: 0.5451s
+2025-05-28 14:33:29,893 - INFO - Epoch 10, Batch 20/222, Loss: 0.1222, Time per batch: 0.5451s
+2025-05-28 14:33:35,523 - INFO - Epoch 10, Batch 30/222, Loss: 0.1213, Time per batch: 0.5511s
+2025-05-28 14:33:35,523 - INFO - Epoch 10, Batch 30/222, Loss: 0.1213, Time per batch: 0.5511s
+2025-05-28 14:33:41,527 - INFO - Epoch 10, Batch 40/222, Loss: 0.1279, Time per batch: 0.5634s
+2025-05-28 14:33:41,527 - INFO - Epoch 10, Batch 40/222, Loss: 0.1279, Time per batch: 0.5634s
+2025-05-28 14:33:47,070 - INFO - Epoch 10, Batch 50/222, Loss: 0.1237, Time per batch: 0.5616s
+2025-05-28 14:33:47,070 - INFO - Epoch 10, Batch 50/222, Loss: 0.1237, Time per batch: 0.5616s
+2025-05-28 14:33:52,596 - INFO - Epoch 10, Batch 60/222, Loss: 0.1188, Time per batch: 0.5601s
+2025-05-28 14:33:52,596 - INFO - Epoch 10, Batch 60/222, Loss: 0.1188, Time per batch: 0.5601s
+2025-05-28 14:33:58,118 - INFO - Epoch 10, Batch 70/222, Loss: 0.1122, Time per batch: 0.5590s
+2025-05-28 14:33:58,118 - INFO - Epoch 10, Batch 70/222, Loss: 0.1122, Time per batch: 0.5590s
+2025-05-28 14:34:03,735 - INFO - Epoch 10, Batch 80/222, Loss: 0.1147, Time per batch: 0.5593s
+2025-05-28 14:34:03,735 - INFO - Epoch 10, Batch 80/222, Loss: 0.1147, Time per batch: 0.5593s
+2025-05-28 14:34:09,151 - INFO - Epoch 10, Batch 90/222, Loss: 0.1161, Time per batch: 0.5573s
+2025-05-28 14:34:09,151 - INFO - Epoch 10, Batch 90/222, Loss: 0.1161, Time per batch: 0.5573s
+2025-05-28 14:34:14,514 - INFO - Epoch 10, Batch 100/222, Loss: 0.1153, Time per batch: 0.5552s
+2025-05-28 14:34:14,514 - INFO - Epoch 10, Batch 100/222, Loss: 0.1153, Time per batch: 0.5552s
+2025-05-28 14:34:20,078 - INFO - Epoch 10, Batch 110/222, Loss: 0.1160, Time per batch: 0.5553s
+2025-05-28 14:34:20,078 - INFO - Epoch 10, Batch 110/222, Loss: 0.1160, Time per batch: 0.5553s
+2025-05-28 14:34:26,029 - INFO - Epoch 10, Batch 120/222, Loss: 0.1187, Time per batch: 0.5587s
+2025-05-28 14:34:26,029 - INFO - Epoch 10, Batch 120/222, Loss: 0.1187, Time per batch: 0.5587s
+2025-05-28 14:34:32,051 - INFO - Epoch 10, Batch 130/222, Loss: 0.1090, Time per batch: 0.5620s
+2025-05-28 14:34:32,051 - INFO - Epoch 10, Batch 130/222, Loss: 0.1090, Time per batch: 0.5620s
+2025-05-28 14:34:37,681 - INFO - Epoch 10, Batch 140/222, Loss: 0.1144, Time per batch: 0.5621s
+2025-05-28 14:34:37,681 - INFO - Epoch 10, Batch 140/222, Loss: 0.1144, Time per batch: 0.5621s
+2025-05-28 14:34:43,222 - INFO - Epoch 10, Batch 150/222, Loss: 0.1223, Time per batch: 0.5615s
+2025-05-28 14:34:43,222 - INFO - Epoch 10, Batch 150/222, Loss: 0.1223, Time per batch: 0.5615s
+2025-05-28 14:54:12,049 - INFO - Logging configured.
+2025-05-28 14:54:12,049 - INFO - Using device: cpu
+2025-05-28 14:54:12,050 - INFO - Loading tokenized data from data/processed\tokenized_data.pt
+2025-05-28 14:54:12,055 - INFO - Train tokens: 14310, Validation tokens: 1591
+2025-05-28 14:54:12,055 - INFO - Created train DataLoader with 222 batches of size 64
+2025-05-28 14:54:12,055 - INFO - Created validation DataLoader with 23 batches of size 64
+2025-05-28 14:54:12,055 - INFO - Vocab size from data: 59
+2025-05-28 14:54:12,055 - INFO - Sequence length: 128
+2025-05-28 14:54:12,067 - INFO - Model built.
+2025-05-28 14:54:12,067 - INFO - Model config: {'vocab_size': 59, 'd_model': 128, 'n_heads': 4, 'n_layers': 3, 'dropout': 0.1, 'seq_length': 128}
+2025-05-28 14:54:13,338 - INFO - Starting epoch 1...
+2025-05-28 14:54:17,814 - INFO - Epoch 1, Batch 10/222, Loss: 3.1535, Time per batch: 0.4476s
+2025-05-28 14:54:22,409 - INFO - Epoch 1, Batch 20/222, Loss: 2.8841, Time per batch: 0.4535s
+2025-05-28 14:54:27,506 - INFO - Epoch 1, Batch 30/222, Loss: 2.7452, Time per batch: 0.4723s
+2025-05-28 14:54:32,438 - INFO - Epoch 1, Batch 40/222, Loss: 2.6448, Time per batch: 0.4775s
+2025-05-28 14:54:37,657 - INFO - Epoch 1, Batch 50/222, Loss: 2.5839, Time per batch: 0.4864s
+2025-05-28 14:54:42,827 - INFO - Epoch 1, Batch 60/222, Loss: 2.4900, Time per batch: 0.4915s
+2025-05-28 14:54:48,025 - INFO - Epoch 1, Batch 70/222, Loss: 2.4781, Time per batch: 0.4955s
+2025-05-28 14:54:53,222 - INFO - Epoch 1, Batch 80/222, Loss: 2.4443, Time per batch: 0.4985s
+2025-05-28 14:54:58,508 - INFO - Epoch 1, Batch 90/222, Loss: 2.3871, Time per batch: 0.5019s
+2025-05-28 14:55:03,834 - INFO - Epoch 1, Batch 100/222, Loss: 2.4130, Time per batch: 0.5050s
+2025-05-28 14:55:09,098 - INFO - Epoch 1, Batch 110/222, Loss: 2.3599, Time per batch: 0.5069s
+2025-05-28 14:55:14,611 - INFO - Epoch 1, Batch 120/222, Loss: 2.3484, Time per batch: 0.5106s
+2025-05-28 14:55:20,301 - INFO - Epoch 1, Batch 130/222, Loss: 2.3282, Time per batch: 0.5151s
+2025-05-28 14:55:25,812 - INFO - Epoch 1, Batch 140/222, Loss: 2.3159, Time per batch: 0.5177s
+2025-05-28 14:55:31,294 - INFO - Epoch 1, Batch 150/222, Loss: 2.3161, Time per batch: 0.5197s
+2025-05-28 14:55:36,209 - INFO - Epoch 1, Batch 160/222, Loss: 2.2820, Time per batch: 0.5179s
+2025-05-28 14:55:41,285 - INFO - Epoch 1, Batch 170/222, Loss: 2.2930, Time per batch: 0.5173s
+2025-05-28 14:55:46,189 - INFO - Epoch 1, Batch 180/222, Loss: 2.2565, Time per batch: 0.5158s
+2025-05-28 14:55:51,115 - INFO - Epoch 1, Batch 190/222, Loss: 2.2571, Time per batch: 0.5146s
+2025-05-28 14:55:55,965 - INFO - Epoch 1, Batch 200/222, Loss: 2.2163, Time per batch: 0.5131s
+2025-05-28 14:56:00,856 - INFO - Epoch 1, Batch 210/222, Loss: 2.1841, Time per batch: 0.5120s
+2025-05-28 14:56:06,118 - INFO - Epoch 1, Batch 220/222, Loss: 2.1547, Time per batch: 0.5126s
+2025-05-28 14:56:07,027 - INFO - Epoch 1 finished. Avg Training Loss: 2.4635
+2025-05-28 14:56:07,028 - INFO - Starting evaluation...
+2025-05-28 14:56:09,535 - INFO - Evaluation Loss: 2.2240
+2025-05-28 14:56:09,562 - INFO - Checkpoint saved to output/checkpoints\best_model.pth
+2025-05-28 14:56:09,562 - INFO - Validation loss improved. Saving best model to output/checkpoints\best_model.pth. Best loss: 2.2240
+2025-05-28 14:56:09,563 - INFO - Starting epoch 2...
+2025-05-28 14:56:14,852 - INFO - Epoch 2, Batch 10/222, Loss: 2.1047, Time per batch: 0.5288s
+2025-05-28 14:56:19,787 - INFO - Epoch 2, Batch 20/222, Loss: 2.0890, Time per batch: 0.5112s
+2025-05-28 14:56:24,826 - INFO - Epoch 2, Batch 30/222, Loss: 2.0597, Time per batch: 0.5087s
+2025-05-28 14:56:29,929 - INFO - Epoch 2, Batch 40/222, Loss: 1.9931, Time per batch: 0.5091s
+2025-05-28 14:56:34,911 - INFO - Epoch 2, Batch 50/222, Loss: 1.9831, Time per batch: 0.5069s
+2025-05-28 14:56:39,875 - INFO - Epoch 2, Batch 60/222, Loss: 1.9318, Time per batch: 0.5052s
+2025-05-28 14:56:44,901 - INFO - Epoch 2, Batch 70/222, Loss: 1.9036, Time per batch: 0.5048s
+2025-05-28 14:56:49,968 - INFO - Epoch 2, Batch 80/222, Loss: 1.8703, Time per batch: 0.5051s
+2025-05-28 14:56:55,020 - INFO - Epoch 2, Batch 90/222, Loss: 1.7705, Time per batch: 0.5051s
+2025-05-28 14:57:00,067 - INFO - Epoch 2, Batch 100/222, Loss: 1.7414, Time per batch: 0.5050s
+2025-05-28 14:57:05,034 - INFO - Epoch 2, Batch 110/222, Loss: 1.7393, Time per batch: 0.5043s
+2025-05-28 14:57:10,268 - INFO - Epoch 2, Batch 120/222, Loss: 1.6585, Time per batch: 0.5059s
+2025-05-28 14:57:15,384 - INFO - Epoch 2, Batch 130/222, Loss: 1.5875, Time per batch: 0.5063s
+2025-05-28 14:57:20,505 - INFO - Epoch 2, Batch 140/222, Loss: 1.5483, Time per batch: 0.5067s
+2025-05-28 14:57:25,525 - INFO - Epoch 2, Batch 150/222, Loss: 1.5386, Time per batch: 0.5064s
+2025-05-28 14:57:30,520 - INFO - Epoch 2, Batch 160/222, Loss: 1.4505, Time per batch: 0.5060s
+2025-05-28 14:57:35,375 - INFO - Epoch 2, Batch 170/222, Loss: 1.3883, Time per batch: 0.5048s
+2025-05-28 14:57:40,351 - INFO - Epoch 2, Batch 180/222, Loss: 1.3581, Time per batch: 0.5044s
+2025-05-28 14:57:45,357 - INFO - Epoch 2, Batch 190/222, Loss: 1.3194, Time per batch: 0.5042s
+2025-05-28 14:57:50,388 - INFO - Epoch 2, Batch 200/222, Loss: 1.2741, Time per batch: 0.5041s
+2025-05-28 14:57:55,870 - INFO - Epoch 2, Batch 210/222, Loss: 1.2764, Time per batch: 0.5062s
+2025-05-28 14:58:01,152 - INFO - Epoch 2, Batch 220/222, Loss: 1.1740, Time per batch: 0.5072s
+2025-05-28 14:58:02,083 - INFO - Epoch 2 finished. Avg Training Loss: 1.6781
+2025-05-28 14:58:02,084 - INFO - Starting evaluation...
+2025-05-28 14:58:04,934 - INFO - Evaluation Loss: 1.2781
+2025-05-28 14:58:04,955 - INFO - Checkpoint saved to output/checkpoints\best_model.pth
+2025-05-28 14:58:04,955 - INFO - Validation loss improved. Saving best model to output/checkpoints\best_model.pth. Best loss: 1.2781
+2025-05-28 14:58:04,956 - INFO - Starting epoch 3...
+2025-05-28 14:58:10,589 - INFO - Epoch 3, Batch 10/222, Loss: 1.0806, Time per batch: 0.5632s
+2025-05-28 14:58:16,047 - INFO - Epoch 3, Batch 20/222, Loss: 1.0276, Time per batch: 0.5545s
+2025-05-28 14:58:21,487 - INFO - Epoch 3, Batch 30/222, Loss: 0.9953, Time per batch: 0.5510s
+2025-05-28 14:58:27,076 - INFO - Epoch 3, Batch 40/222, Loss: 0.9474, Time per batch: 0.5530s
+2025-05-28 14:58:32,715 - INFO - Epoch 3, Batch 50/222, Loss: 0.8700, Time per batch: 0.5552s
+2025-05-28 14:58:37,977 - INFO - Epoch 3, Batch 60/222, Loss: 0.9024, Time per batch: 0.5504s
+2025-05-28 14:58:43,322 - INFO - Epoch 3, Batch 70/222, Loss: 0.8201, Time per batch: 0.5481s
+2025-05-28 14:58:48,707 - INFO - Epoch 3, Batch 80/222, Loss: 0.7895, Time per batch: 0.5469s
+2025-05-28 14:58:54,037 - INFO - Epoch 3, Batch 90/222, Loss: 0.7632, Time per batch: 0.5453s
+2025-05-28 14:58:59,411 - INFO - Epoch 3, Batch 100/222, Loss: 0.6870, Time per batch: 0.5445s
+2025-05-28 14:59:04,766 - INFO - Epoch 3, Batch 110/222, Loss: 0.6215, Time per batch: 0.5437s
+2025-05-28 14:59:10,244 - INFO - Epoch 3, Batch 120/222, Loss: 0.6556, Time per batch: 0.5441s
+2025-05-28 14:59:15,985 - INFO - Epoch 3, Batch 130/222, Loss: 0.6171, Time per batch: 0.5464s
+2025-05-28 14:59:21,521 - INFO - Epoch 3, Batch 140/222, Loss: 0.5587, Time per batch: 0.5469s
+2025-05-28 14:59:26,940 - INFO - Epoch 3, Batch 150/222, Loss: 0.5529, Time per batch: 0.5466s
+2025-05-28 14:59:32,411 - INFO - Epoch 3, Batch 160/222, Loss: 0.5007, Time per batch: 0.5466s
+2025-05-28 14:59:37,819 - INFO - Epoch 3, Batch 170/222, Loss: 0.5310, Time per batch: 0.5463s
+2025-05-28 14:59:43,380 - INFO - Epoch 3, Batch 180/222, Loss: 0.4488, Time per batch: 0.5468s
+2025-05-28 14:59:48,730 - INFO - Epoch 3, Batch 190/222, Loss: 0.4785, Time per batch: 0.5462s
+2025-05-28 14:59:54,100 - INFO - Epoch 3, Batch 200/222, Loss: 0.4287, Time per batch: 0.5457s
+2025-05-28 15:00:00,135 - INFO - Epoch 3, Batch 210/222, Loss: 0.4099, Time per batch: 0.5485s
+2025-05-28 15:00:05,872 - INFO - Epoch 3, Batch 220/222, Loss: 0.4058, Time per batch: 0.5496s
+2025-05-28 15:00:06,745 - INFO - Epoch 3 finished. Avg Training Loss: 0.7041
+2025-05-28 15:00:06,745 - INFO - Starting evaluation...
+2025-05-28 15:00:09,237 - INFO - Evaluation Loss: 0.2442
+2025-05-28 15:00:09,255 - INFO - Checkpoint saved to output/checkpoints\best_model.pth
+2025-05-28 15:00:09,255 - INFO - Validation loss improved. Saving best model to output/checkpoints\best_model.pth. Best loss: 0.2442
+2025-05-28 15:00:09,255 - INFO - Starting epoch 4...
+2025-05-28 15:00:14,821 - INFO - Epoch 4, Batch 10/222, Loss: 0.4072, Time per batch: 0.5566s
+2025-05-28 15:00:20,343 - INFO - Epoch 4, Batch 20/222, Loss: 0.3976, Time per batch: 0.5544s
+2025-05-28 15:00:25,968 - INFO - Epoch 4, Batch 30/222, Loss: 0.3749, Time per batch: 0.5571s
+2025-05-28 15:00:31,365 - INFO - Epoch 4, Batch 40/222, Loss: 0.3622, Time per batch: 0.5528s
+2025-05-28 15:00:36,880 - INFO - Epoch 4, Batch 50/222, Loss: 0.3636, Time per batch: 0.5525s
+2025-05-28 15:00:42,259 - INFO - Epoch 4, Batch 60/222, Loss: 0.3454, Time per batch: 0.5501s
+2025-05-28 15:00:47,624 - INFO - Epoch 4, Batch 70/222, Loss: 0.3042, Time per batch: 0.5481s
+2025-05-28 15:00:53,157 - INFO - Epoch 4, Batch 80/222, Loss: 0.3101, Time per batch: 0.5488s
+2025-05-28 15:00:58,765 - INFO - Epoch 4, Batch 90/222, Loss: 0.2963, Time per batch: 0.5501s
+2025-05-28 15:01:04,318 - INFO - Epoch 4, Batch 100/222, Loss: 0.3052, Time per batch: 0.5506s
+2025-05-28 15:01:09,739 - INFO - Epoch 4, Batch 110/222, Loss: 0.3031, Time per batch: 0.5499s
+2025-05-28 15:01:15,204 - INFO - Epoch 4, Batch 120/222, Loss: 0.3012, Time per batch: 0.5496s
+2025-05-28 15:01:20,781 - INFO - Epoch 4, Batch 130/222, Loss: 0.2857, Time per batch: 0.5502s
+2025-05-28 15:01:26,057 - INFO - Epoch 4, Batch 140/222, Loss: 0.2658, Time per batch: 0.5486s
+2025-05-28 15:01:31,598 - INFO - Epoch 4, Batch 150/222, Loss: 0.2779, Time per batch: 0.5490s
+2025-05-28 15:01:37,175 - INFO - Epoch 4, Batch 160/222, Loss: 0.2657, Time per batch: 0.5495s
+2025-05-28 15:01:42,848 - INFO - Epoch 4, Batch 170/222, Loss: 0.2635, Time per batch: 0.5505s
+2025-05-28 15:01:48,487 - INFO - Epoch 4, Batch 180/222, Loss: 0.2490, Time per batch: 0.5513s
+2025-05-28 15:01:54,165 - INFO - Epoch 4, Batch 190/222, Loss: 0.2560, Time per batch: 0.5522s
+2025-05-28 15:01:59,784 - INFO - Epoch 4, Batch 200/222, Loss: 0.2365, Time per batch: 0.5526s
+2025-05-28 15:02:05,327 - INFO - Epoch 4, Batch 210/222, Loss: 0.2343, Time per batch: 0.5527s
+2025-05-28 15:02:11,058 - INFO - Epoch 4, Batch 220/222, Loss: 0.2302, Time per batch: 0.5536s
+2025-05-28 15:02:11,948 - INFO - Epoch 4 finished. Avg Training Loss: 0.3059
+2025-05-28 15:02:11,948 - INFO - Starting evaluation...
+2025-05-28 15:02:14,295 - INFO - Evaluation Loss: 0.1199
+2025-05-28 15:02:14,313 - INFO - Checkpoint saved to output/checkpoints\best_model.pth
+2025-05-28 15:02:14,313 - INFO - Validation loss improved. Saving best model to output/checkpoints\best_model.pth. Best loss: 0.1199
+2025-05-28 15:02:14,315 - INFO - Starting epoch 5...
+2025-05-28 15:02:19,822 - INFO - Epoch 5, Batch 10/222, Loss: 0.2332, Time per batch: 0.5507s
+2025-05-28 15:02:25,436 - INFO - Epoch 5, Batch 20/222, Loss: 0.2193, Time per batch: 0.5561s
+2025-05-28 15:02:30,986 - INFO - Epoch 5, Batch 30/222, Loss: 0.2303, Time per batch: 0.5557s
+2025-05-28 15:02:36,887 - INFO - Epoch 5, Batch 40/222, Loss: 0.2372, Time per batch: 0.5643s
+2025-05-28 15:02:42,594 - INFO - Epoch 5, Batch 50/222, Loss: 0.2287, Time per batch: 0.5656s
+2025-05-28 15:02:47,963 - INFO - Epoch 5, Batch 60/222, Loss: 0.2323, Time per batch: 0.5608s
+2025-05-28 15:02:53,344 - INFO - Epoch 5, Batch 70/222, Loss: 0.2090, Time per batch: 0.5576s
+2025-05-28 15:02:58,802 - INFO - Epoch 5, Batch 80/222, Loss: 0.2065, Time per batch: 0.5561s
+2025-05-28 15:03:04,266 - INFO - Epoch 5, Batch 90/222, Loss: 0.2311, Time per batch: 0.5550s
+2025-05-28 15:03:09,789 - INFO - Epoch 5, Batch 100/222, Loss: 0.2073, Time per batch: 0.5547s
+2025-05-28 15:03:15,655 - INFO - Epoch 5, Batch 110/222, Loss: 0.2039, Time per batch: 0.5576s
+2025-05-28 15:03:21,103 - INFO - Epoch 5, Batch 120/222, Loss: 0.1992, Time per batch: 0.5566s
+2025-05-28 15:03:26,548 - INFO - Epoch 5, Batch 130/222, Loss: 0.1983, Time per batch: 0.5556s
+2025-05-28 15:03:32,078 - INFO - Epoch 5, Batch 140/222, Loss: 0.2016, Time per batch: 0.5555s
+2025-05-28 15:03:37,640 - INFO - Epoch 5, Batch 150/222, Loss: 0.1923, Time per batch: 0.5555s
+2025-05-28 15:03:43,041 - INFO - Epoch 5, Batch 160/222, Loss: 0.1914, Time per batch: 0.5545s
+2025-05-28 15:03:48,468 - INFO - Epoch 5, Batch 170/222, Loss: 0.1865, Time per batch: 0.5538s
+2025-05-28 15:03:54,030 - INFO - Epoch 5, Batch 180/222, Loss: 0.1949, Time per batch: 0.5540s
+2025-05-28 15:03:59,498 - INFO - Epoch 5, Batch 190/222, Loss: 0.1840, Time per batch: 0.5536s
+2025-05-28 15:04:04,918 - INFO - Epoch 5, Batch 200/222, Loss: 0.1856, Time per batch: 0.5530s
+2025-05-28 15:04:10,440 - INFO - Epoch 5, Batch 210/222, Loss: 0.1800, Time per batch: 0.5530s
+2025-05-28 15:04:16,232 - INFO - Epoch 5, Batch 220/222, Loss: 0.1764, Time per batch: 0.5542s
+2025-05-28 15:04:17,293 - INFO - Epoch 5 finished. Avg Training Loss: 0.2055
+2025-05-28 15:04:17,294 - INFO - Starting evaluation...
+2025-05-28 15:04:20,158 - INFO - Evaluation Loss: 0.1012
+2025-05-28 15:04:20,177 - INFO - Checkpoint saved to output/checkpoints\best_model.pth
+2025-05-28 15:04:20,178 - INFO - Validation loss improved. Saving best model to output/checkpoints\best_model.pth. Best loss: 0.1012
+2025-05-28 15:04:20,178 - INFO - Starting epoch 6...
+2025-05-28 15:04:26,030 - INFO - Epoch 6, Batch 10/222, Loss: 0.1858, Time per batch: 0.5852s
+2025-05-28 15:04:31,754 - INFO - Epoch 6, Batch 20/222, Loss: 0.1798, Time per batch: 0.5788s
+2025-05-28 15:04:37,340 - INFO - Epoch 6, Batch 30/222, Loss: 0.1730, Time per batch: 0.5721s
+2025-05-28 15:04:42,953 - INFO - Epoch 6, Batch 40/222, Loss: 0.1802, Time per batch: 0.5694s
+2025-05-28 15:04:48,465 - INFO - Epoch 6, Batch 50/222, Loss: 0.1708, Time per batch: 0.5657s
+2025-05-28 15:04:54,052 - INFO - Epoch 6, Batch 60/222, Loss: 0.1696, Time per batch: 0.5646s
+2025-05-28 15:04:59,493 - INFO - Epoch 6, Batch 70/222, Loss: 0.1827, Time per batch: 0.5616s
+2025-05-28 15:05:04,985 - INFO - Epoch 6, Batch 80/222, Loss: 0.1714, Time per batch: 0.5601s
+2025-05-28 15:05:10,541 - INFO - Epoch 6, Batch 90/222, Loss: 0.1667, Time per batch: 0.5596s
+2025-05-28 15:05:16,045 - INFO - Epoch 6, Batch 100/222, Loss: 0.1670, Time per batch: 0.5587s
+2025-05-28 15:05:21,263 - INFO - Epoch 6, Batch 110/222, Loss: 0.1714, Time per batch: 0.5553s
+2025-05-28 15:05:26,582 - INFO - Epoch 6, Batch 120/222, Loss: 0.1676, Time per batch: 0.5534s
+2025-05-28 15:05:31,615 - INFO - Epoch 6, Batch 130/222, Loss: 0.1691, Time per batch: 0.5495s
+2025-05-28 15:05:37,097 - INFO - Epoch 6, Batch 140/222, Loss: 0.1616, Time per batch: 0.5494s
+2025-05-28 15:05:42,718 - INFO - Epoch 6, Batch 150/222, Loss: 0.1679, Time per batch: 0.5503s
+2025-05-28 15:05:48,059 - INFO - Epoch 6, Batch 160/222, Loss: 0.1621, Time per batch: 0.5493s
+2025-05-28 15:05:53,659 - INFO - Epoch 6, Batch 170/222, Loss: 0.1573, Time per batch: 0.5499s
+2025-05-28 15:05:59,323 - INFO - Epoch 6, Batch 180/222, Loss: 0.1574, Time per batch: 0.5508s
+2025-05-28 15:06:05,043 - INFO - Epoch 6, Batch 190/222, Loss: 0.1635, Time per batch: 0.5519s
+2025-05-28 15:06:10,140 - INFO - Epoch 6, Batch 200/222, Loss: 0.1513, Time per batch: 0.5498s
+2025-05-28 15:06:15,159 - INFO - Epoch 6, Batch 210/222, Loss: 0.1423, Time per batch: 0.5475s
+2025-05-28 15:06:20,285 - INFO - Epoch 6, Batch 220/222, Loss: 0.1501, Time per batch: 0.5459s
+2025-05-28 15:06:21,196 - INFO - Epoch 6 finished. Avg Training Loss: 0.1672
+2025-05-28 15:06:21,196 - INFO - Starting evaluation...
+2025-05-28 15:06:23,826 - INFO - Evaluation Loss: 0.0908
+2025-05-28 15:06:23,845 - INFO - Checkpoint saved to output/checkpoints\best_model.pth
+2025-05-28 15:06:23,845 - INFO - Validation loss improved. Saving best model to output/checkpoints\best_model.pth. Best loss: 0.0908
+2025-05-28 15:06:23,845 - INFO - Starting epoch 7...
+2025-05-28 15:06:29,382 - INFO - Epoch 7, Batch 10/222, Loss: 0.1406, Time per batch: 0.5537s
+2025-05-28 15:06:34,467 - INFO - Epoch 7, Batch 20/222, Loss: 0.1452, Time per batch: 0.5311s
+2025-05-28 15:06:39,965 - INFO - Epoch 7, Batch 30/222, Loss: 0.1544, Time per batch: 0.5373s
+2025-05-28 15:06:45,155 - INFO - Epoch 7, Batch 40/222, Loss: 0.1481, Time per batch: 0.5328s
+2025-05-28 15:06:50,126 - INFO - Epoch 7, Batch 50/222, Loss: 0.1505, Time per batch: 0.5256s
+2025-05-28 15:06:55,495 - INFO - Epoch 7, Batch 60/222, Loss: 0.1443, Time per batch: 0.5275s
+2025-05-28 15:07:01,341 - INFO - Epoch 7, Batch 70/222, Loss: 0.1496, Time per batch: 0.5357s
+2025-05-28 15:07:06,796 - INFO - Epoch 7, Batch 80/222, Loss: 0.1435, Time per batch: 0.5369s
+2025-05-28 15:07:12,101 - INFO - Epoch 7, Batch 90/222, Loss: 0.1486, Time per batch: 0.5362s
+2025-05-28 15:07:17,242 - INFO - Epoch 7, Batch 100/222, Loss: 0.1580, Time per batch: 0.5340s
+2025-05-28 15:07:22,765 - INFO - Epoch 7, Batch 110/222, Loss: 0.1407, Time per batch: 0.5356s
+2025-05-28 15:07:28,519 - INFO - Epoch 7, Batch 120/222, Loss: 0.1363, Time per batch: 0.5389s
+2025-05-28 15:07:34,279 - INFO - Epoch 7, Batch 130/222, Loss: 0.1406, Time per batch: 0.5418s
+2025-05-28 15:07:40,434 - INFO - Epoch 7, Batch 140/222, Loss: 0.1411, Time per batch: 0.5471s
+2025-05-28 15:07:46,068 - INFO - Epoch 7, Batch 150/222, Loss: 0.1449, Time per batch: 0.5482s
+2025-05-28 15:07:51,552 - INFO - Epoch 7, Batch 160/222, Loss: 0.1398, Time per batch: 0.5482s
+2025-05-28 15:07:57,044 - INFO - Epoch 7, Batch 170/222, Loss: 0.1348, Time per batch: 0.5482s
+2025-05-28 15:08:02,575 - INFO - Epoch 7, Batch 180/222, Loss: 0.1468, Time per batch: 0.5485s
+2025-05-28 15:08:08,129 - INFO - Epoch 7, Batch 190/222, Loss: 0.1339, Time per batch: 0.5489s
+2025-05-28 15:08:13,674 - INFO - Epoch 7, Batch 200/222, Loss: 0.1392, Time per batch: 0.5491s
+2025-05-28 15:08:19,171 - INFO - Epoch 7, Batch 210/222, Loss: 0.1446, Time per batch: 0.5492s
+2025-05-28 15:08:24,651 - INFO - Epoch 7, Batch 220/222, Loss: 0.1368, Time per batch: 0.5491s
+2025-05-28 15:08:25,559 - INFO - Epoch 7 finished. Avg Training Loss: 0.1442
+2025-05-28 15:08:25,560 - INFO - Starting evaluation...
+2025-05-28 15:08:27,941 - INFO - Evaluation Loss: 0.0872
+2025-05-28 15:08:27,957 - INFO - Checkpoint saved to output/checkpoints\best_model.pth
+2025-05-28 15:08:27,957 - INFO - Validation loss improved. Saving best model to output/checkpoints\best_model.pth. Best loss: 0.0872
+2025-05-28 15:08:27,958 - INFO - Starting epoch 8...
+2025-05-28 15:08:33,573 - INFO - Epoch 8, Batch 10/222, Loss: 0.1452, Time per batch: 0.5615s
+2025-05-28 15:08:39,172 - INFO - Epoch 8, Batch 20/222, Loss: 0.1386, Time per batch: 0.5607s
+2025-05-28 15:08:44,763 - INFO - Epoch 8, Batch 30/222, Loss: 0.1262, Time per batch: 0.5602s
+2025-05-28 15:08:50,218 - INFO - Epoch 8, Batch 40/222, Loss: 0.1361, Time per batch: 0.5565s
+2025-05-28 15:08:55,616 - INFO - Epoch 8, Batch 50/222, Loss: 0.1332, Time per batch: 0.5532s
+2025-05-28 15:09:01,056 - INFO - Epoch 8, Batch 60/222, Loss: 0.1387, Time per batch: 0.5516s
+2025-05-28 15:09:06,599 - INFO - Epoch 8, Batch 70/222, Loss: 0.1397, Time per batch: 0.5520s
+2025-05-28 15:09:12,092 - INFO - Epoch 8, Batch 80/222, Loss: 0.1363, Time per batch: 0.5517s
+2025-05-28 15:09:17,563 - INFO - Epoch 8, Batch 90/222, Loss: 0.1334, Time per batch: 0.5512s
+2025-05-28 15:09:23,036 - INFO - Epoch 8, Batch 100/222, Loss: 0.1354, Time per batch: 0.5508s
+2025-05-28 15:09:28,491 - INFO - Epoch 8, Batch 110/222, Loss: 0.1269, Time per batch: 0.5503s
+2025-05-28 15:09:33,952 - INFO - Epoch 8, Batch 120/222, Loss: 0.1305, Time per batch: 0.5500s
+2025-05-28 15:09:39,397 - INFO - Epoch 8, Batch 130/222, Loss: 0.1322, Time per batch: 0.5495s
+2025-05-28 15:09:44,866 - INFO - Epoch 8, Batch 140/222, Loss: 0.1324, Time per batch: 0.5493s
+2025-05-28 15:09:50,368 - INFO - Epoch 8, Batch 150/222, Loss: 0.1309, Time per batch: 0.5494s
+2025-05-28 15:09:55,852 - INFO - Epoch 8, Batch 160/222, Loss: 0.1303, Time per batch: 0.5493s
+2025-05-28 15:10:01,309 - INFO - Epoch 8, Batch 170/222, Loss: 0.1406, Time per batch: 0.5491s
+2025-05-28 15:10:06,760 - INFO - Epoch 8, Batch 180/222, Loss: 0.1282, Time per batch: 0.5489s
+2025-05-28 15:10:12,329 - INFO - Epoch 8, Batch 190/222, Loss: 0.1278, Time per batch: 0.5493s
+2025-05-28 15:10:17,751 - INFO - Epoch 8, Batch 200/222, Loss: 0.1347, Time per batch: 0.5490s
+2025-05-28 15:10:23,261 - INFO - Epoch 8, Batch 210/222, Loss: 0.1243, Time per batch: 0.5491s
+2025-05-28 15:10:28,756 - INFO - Epoch 8, Batch 220/222, Loss: 0.1246, Time per batch: 0.5491s
+2025-05-28 15:10:29,629 - INFO - Epoch 8 finished. Avg Training Loss: 0.1310
+2025-05-28 15:10:29,629 - INFO - Starting evaluation...
+2025-05-28 15:10:31,984 - INFO - Evaluation Loss: 0.0804
+2025-05-28 15:10:32,004 - INFO - Checkpoint saved to output/checkpoints\best_model.pth
+2025-05-28 15:10:32,005 - INFO - Validation loss improved. Saving best model to output/checkpoints\best_model.pth. Best loss: 0.0804
+2025-05-28 15:10:32,005 - INFO - Starting epoch 9...
+2025-05-28 15:10:37,490 - INFO - Epoch 9, Batch 10/222, Loss: 0.1175, Time per batch: 0.5486s
+2025-05-28 15:10:42,939 - INFO - Epoch 9, Batch 20/222, Loss: 0.1334, Time per batch: 0.5467s
+2025-05-28 15:10:48,444 - INFO - Epoch 9, Batch 30/222, Loss: 0.1307, Time per batch: 0.5480s
+2025-05-28 15:10:53,900 - INFO - Epoch 9, Batch 40/222, Loss: 0.1153, Time per batch: 0.5474s
+2025-05-28 15:10:59,391 - INFO - Epoch 9, Batch 50/222, Loss: 0.1099, Time per batch: 0.5477s
+2025-05-28 15:11:04,900 - INFO - Epoch 9, Batch 60/222, Loss: 0.1235, Time per batch: 0.5483s
+2025-05-28 15:11:10,332 - INFO - Epoch 9, Batch 70/222, Loss: 0.1205, Time per batch: 0.5475s
+2025-05-28 15:11:15,819 - INFO - Epoch 9, Batch 80/222, Loss: 0.1207, Time per batch: 0.5477s
+2025-05-28 15:11:21,439 - INFO - Epoch 9, Batch 90/222, Loss: 0.1216, Time per batch: 0.5493s
+2025-05-28 15:11:26,946 - INFO - Epoch 9, Batch 100/222, Loss: 0.1320, Time per batch: 0.5494s
+2025-05-28 15:11:32,359 - INFO - Epoch 9, Batch 110/222, Loss: 0.1274, Time per batch: 0.5487s
+2025-05-28 15:11:37,782 - INFO - Epoch 9, Batch 120/222, Loss: 0.1216, Time per batch: 0.5481s
+2025-05-28 15:11:43,431 - INFO - Epoch 9, Batch 130/222, Loss: 0.1198, Time per batch: 0.5494s
+2025-05-28 15:11:49,066 - INFO - Epoch 9, Batch 140/222, Loss: 0.1353, Time per batch: 0.5504s
+2025-05-28 15:11:54,579 - INFO - Epoch 9, Batch 150/222, Loss: 0.1211, Time per batch: 0.5505s
+2025-05-28 15:12:00,067 - INFO - Epoch 9, Batch 160/222, Loss: 0.1201, Time per batch: 0.5504s
+2025-05-28 15:12:05,759 - INFO - Epoch 9, Batch 170/222, Loss: 0.1227, Time per batch: 0.5515s
+2025-05-28 15:12:10,903 - INFO - Epoch 9, Batch 180/222, Loss: 0.1137, Time per batch: 0.5494s
+2025-05-28 15:12:15,787 - INFO - Epoch 9, Batch 190/222, Loss: 0.1225, Time per batch: 0.5462s
+2025-05-28 15:12:20,626 - INFO - Epoch 9, Batch 200/222, Loss: 0.1179, Time per batch: 0.5431s
+2025-05-28 15:12:26,188 - INFO - Epoch 9, Batch 210/222, Loss: 0.1137, Time per batch: 0.5437s
+2025-05-28 15:12:31,530 - INFO - Epoch 9, Batch 220/222, Loss: 0.1190, Time per batch: 0.5433s
+2025-05-28 15:12:32,350 - INFO - Epoch 9 finished. Avg Training Loss: 0.1212
+2025-05-28 15:12:32,350 - INFO - Starting evaluation...
+2025-05-28 15:12:34,661 - INFO - Evaluation Loss: 0.0804
+2025-05-28 15:12:34,679 - INFO - Checkpoint saved to output/checkpoints\best_model.pth
+2025-05-28 15:12:34,679 - INFO - Validation loss improved. Saving best model to output/checkpoints\best_model.pth. Best loss: 0.0804
+2025-05-28 15:12:34,679 - INFO - Starting epoch 10...
+2025-05-28 15:12:40,416 - INFO - Epoch 10, Batch 10/222, Loss: 0.1192, Time per batch: 0.5736s
+2025-05-28 15:12:45,808 - INFO - Epoch 10, Batch 20/222, Loss: 0.1110, Time per batch: 0.5564s
+2025-05-28 15:12:51,368 - INFO - Epoch 10, Batch 30/222, Loss: 0.1174, Time per batch: 0.5562s
+2025-05-28 15:12:56,823 - INFO - Epoch 10, Batch 40/222, Loss: 0.1160, Time per batch: 0.5536s
+2025-05-28 15:13:02,618 - INFO - Epoch 10, Batch 50/222, Loss: 0.1211, Time per batch: 0.5588s
+2025-05-28 15:13:08,206 - INFO - Epoch 10, Batch 60/222, Loss: 0.1105, Time per batch: 0.5588s
+2025-05-28 15:13:13,734 - INFO - Epoch 10, Batch 70/222, Loss: 0.1165, Time per batch: 0.5579s
+2025-05-28 15:13:19,169 - INFO - Epoch 10, Batch 80/222, Loss: 0.1202, Time per batch: 0.5561s
+2025-05-28 15:13:24,822 - INFO - Epoch 10, Batch 90/222, Loss: 0.1184, Time per batch: 0.5571s
+2025-05-28 15:13:30,232 - INFO - Epoch 10, Batch 100/222, Loss: 0.1196, Time per batch: 0.5555s
+2025-05-28 15:13:35,772 - INFO - Epoch 10, Batch 110/222, Loss: 0.1139, Time per batch: 0.5554s
+2025-05-28 15:13:41,445 - INFO - Epoch 10, Batch 120/222, Loss: 0.1167, Time per batch: 0.5564s
+2025-05-28 15:13:46,954 - INFO - Epoch 10, Batch 130/222, Loss: 0.1215, Time per batch: 0.5560s
+2025-05-28 15:13:52,571 - INFO - Epoch 10, Batch 140/222, Loss: 0.1109, Time per batch: 0.5564s
+2025-05-28 15:13:58,120 - INFO - Epoch 10, Batch 150/222, Loss: 0.1158, Time per batch: 0.5563s
+2025-05-28 15:14:03,473 - INFO - Epoch 10, Batch 160/222, Loss: 0.1220, Time per batch: 0.5550s
+2025-05-28 15:14:08,814 - INFO - Epoch 10, Batch 170/222, Loss: 0.1122, Time per batch: 0.5537s
+2025-05-28 15:14:14,205 - INFO - Epoch 10, Batch 180/222, Loss: 0.1138, Time per batch: 0.5529s
+2025-05-28 15:14:19,644 - INFO - Epoch 10, Batch 190/222, Loss: 0.1150, Time per batch: 0.5524s
+2025-05-28 15:14:25,016 - INFO - Epoch 10, Batch 200/222, Loss: 0.1173, Time per batch: 0.5517s
+2025-05-28 15:14:30,664 - INFO - Epoch 10, Batch 210/222, Loss: 0.1118, Time per batch: 0.5523s
+2025-05-28 15:14:36,150 - INFO - Epoch 10, Batch 220/222, Loss: 0.1169, Time per batch: 0.5521s
+2025-05-28 15:14:37,119 - INFO - Epoch 10 finished. Avg Training Loss: 0.1143
+2025-05-28 15:14:37,120 - INFO - Starting evaluation...
+2025-05-28 15:14:39,556 - INFO - Evaluation Loss: 0.0773
+2025-05-28 15:14:39,575 - INFO - Checkpoint saved to output/checkpoints\best_model.pth
+2025-05-28 15:14:39,576 - INFO - Validation loss improved. Saving best model to output/checkpoints\best_model.pth. Best loss: 0.0773
+2025-05-28 15:14:39,591 - INFO - Checkpoint saved to output/checkpoints\epoch_0010.pth
+2025-05-28 15:14:39,592 - INFO - Saved periodic checkpoint to output/checkpoints\epoch_0010.pth
+2025-05-28 15:14:39,592 - INFO - Starting epoch 11...
+2025-05-28 15:14:45,371 - INFO - Epoch 11, Batch 10/222, Loss: 0.1163, Time per batch: 0.5779s
+2025-05-28 15:14:50,961 - INFO - Epoch 11, Batch 20/222, Loss: 0.1125, Time per batch: 0.5684s
+2025-05-28 15:14:56,554 - INFO - Epoch 11, Batch 30/222, Loss: 0.0998, Time per batch: 0.5654s
+2025-05-28 15:15:02,448 - INFO - Epoch 11, Batch 40/222, Loss: 0.1049, Time per batch: 0.5714s
+2025-05-28 15:15:08,204 - INFO - Epoch 11, Batch 50/222, Loss: 0.1025, Time per batch: 0.5722s
+2025-05-28 15:15:13,849 - INFO - Epoch 11, Batch 60/222, Loss: 0.1111, Time per batch: 0.5710s
+2025-05-28 15:15:19,433 - INFO - Epoch 11, Batch 70/222, Loss: 0.1036, Time per batch: 0.5692s
+2025-05-28 15:15:25,058 - INFO - Epoch 11, Batch 80/222, Loss: 0.1149, Time per batch: 0.5683s
+2025-05-28 15:15:30,486 - INFO - Epoch 11, Batch 90/222, Loss: 0.1146, Time per batch: 0.5655s
+2025-05-28 15:15:35,901 - INFO - Epoch 11, Batch 100/222, Loss: 0.1075, Time per batch: 0.5631s
+2025-05-28 15:15:41,255 - INFO - Epoch 11, Batch 110/222, Loss: 0.1094, Time per batch: 0.5606s
+2025-05-28 15:15:46,639 - INFO - Epoch 11, Batch 120/222, Loss: 0.1144, Time per batch: 0.5587s
+2025-05-28 15:15:52,129 - INFO - Epoch 11, Batch 130/222, Loss: 0.1087, Time per batch: 0.5580s
+2025-05-28 15:15:57,791 - INFO - Epoch 11, Batch 140/222, Loss: 0.1168, Time per batch: 0.5585s
+2025-05-28 15:16:03,676 - INFO - Epoch 11, Batch 150/222, Loss: 0.1047, Time per batch: 0.5606s
+2025-05-28 15:16:09,488 - INFO - Epoch 11, Batch 160/222, Loss: 0.1197, Time per batch: 0.5619s
+2025-05-28 15:16:14,964 - INFO - Epoch 11, Batch 170/222, Loss: 0.1138, Time per batch: 0.5610s
+2025-05-28 15:16:20,387 - INFO - Epoch 11, Batch 180/222, Loss: 0.1074, Time per batch: 0.5600s
+2025-05-28 15:16:25,893 - INFO - Epoch 11, Batch 190/222, Loss: 0.1105, Time per batch: 0.5595s
+2025-05-28 15:16:31,543 - INFO - Epoch 11, Batch 200/222, Loss: 0.1134, Time per batch: 0.5598s
+2025-05-28 15:16:36,956 - INFO - Epoch 11, Batch 210/222, Loss: 0.1129, Time per batch: 0.5589s
+2025-05-28 15:16:42,470 - INFO - Epoch 11, Batch 220/222, Loss: 0.1021, Time per batch: 0.5585s
+2025-05-28 15:16:43,391 - INFO - Epoch 11 finished. Avg Training Loss: 0.1088
+2025-05-28 15:16:43,392 - INFO - Starting evaluation...
+2025-05-28 15:16:45,685 - INFO - Evaluation Loss: 0.0739
+2025-05-28 15:16:45,698 - INFO - Checkpoint saved to output/checkpoints\best_model.pth
+2025-05-28 15:16:45,699 - INFO - Validation loss improved. Saving best model to output/checkpoints\best_model.pth. Best loss: 0.0739
+2025-05-28 15:16:45,699 - INFO - Starting epoch 12...
+2025-05-28 15:16:51,065 - INFO - Epoch 12, Batch 10/222, Loss: 0.1065, Time per batch: 0.5366s
+2025-05-28 15:16:56,634 - INFO - Epoch 12, Batch 20/222, Loss: 0.1133, Time per batch: 0.5468s
+2025-05-28 15:17:02,156 - INFO - Epoch 12, Batch 30/222, Loss: 0.1048, Time per batch: 0.5486s
+2025-05-28 15:17:07,332 - INFO - Epoch 12, Batch 40/222, Loss: 0.0968, Time per batch: 0.5408s
+2025-05-28 15:17:12,650 - INFO - Epoch 12, Batch 50/222, Loss: 0.1045, Time per batch: 0.5390s
+2025-05-28 15:17:17,673 - INFO - Epoch 12, Batch 60/222, Loss: 0.0998, Time per batch: 0.5329s
+2025-05-28 15:17:22,674 - INFO - Epoch 12, Batch 70/222, Loss: 0.1087, Time per batch: 0.5282s
+2025-05-28 15:17:27,929 - INFO - Epoch 12, Batch 80/222, Loss: 0.1110, Time per batch: 0.5279s
+2025-05-28 15:17:33,159 - INFO - Epoch 12, Batch 90/222, Loss: 0.0952, Time per batch: 0.5273s
+2025-05-28 15:17:38,393 - INFO - Epoch 12, Batch 100/222, Loss: 0.1068, Time per batch: 0.5269s
+2025-05-28 15:17:43,533 - INFO - Epoch 12, Batch 110/222, Loss: 0.1039, Time per batch: 0.5258s
+2025-05-28 15:17:48,390 - INFO - Epoch 12, Batch 120/222, Loss: 0.1033, Time per batch: 0.5224s
+2025-05-28 15:17:53,608 - INFO - Epoch 12, Batch 130/222, Loss: 0.0985, Time per batch: 0.5224s
+2025-05-28 15:17:58,862 - INFO - Epoch 12, Batch 140/222, Loss: 0.1099, Time per batch: 0.5226s
+2025-05-28 15:18:04,094 - INFO - Epoch 12, Batch 150/222, Loss: 0.1156, Time per batch: 0.5226s
+2025-05-28 15:18:09,495 - INFO - Epoch 12, Batch 160/222, Loss: 0.1110, Time per batch: 0.5237s
+2025-05-28 15:18:14,546 - INFO - Epoch 12, Batch 170/222, Loss: 0.1078, Time per batch: 0.5226s
+2025-05-28 15:18:19,820 - INFO - Epoch 12, Batch 180/222, Loss: 0.1035, Time per batch: 0.5229s
+2025-05-28 15:18:24,828 - INFO - Epoch 12, Batch 190/222, Loss: 0.0975, Time per batch: 0.5217s
+2025-05-28 15:18:29,816 - INFO - Epoch 12, Batch 200/222, Loss: 0.1005, Time per batch: 0.5206s
+2025-05-28 15:18:34,736 - INFO - Epoch 12, Batch 210/222, Loss: 0.1084, Time per batch: 0.5192s
+2025-05-28 15:18:39,853 - INFO - Epoch 12, Batch 220/222, Loss: 0.1072, Time per batch: 0.5189s
+2025-05-28 15:18:40,647 - INFO - Epoch 12 finished. Avg Training Loss: 0.1042
+2025-05-28 15:18:40,648 - INFO - Starting evaluation...
+2025-05-28 15:18:42,767 - INFO - Evaluation Loss: 0.0717
+2025-05-28 15:18:42,783 - INFO - Checkpoint saved to output/checkpoints\best_model.pth
+2025-05-28 15:18:42,784 - INFO - Validation loss improved. Saving best model to output/checkpoints\best_model.pth. Best loss: 0.0717
+2025-05-28 15:18:42,784 - INFO - Starting epoch 13...
+2025-05-28 15:18:47,645 - INFO - Epoch 13, Batch 10/222, Loss: 0.1033, Time per batch: 0.4861s
+2025-05-28 15:18:52,489 - INFO - Epoch 13, Batch 20/222, Loss: 0.0985, Time per batch: 0.4852s
+2025-05-28 15:18:57,434 - INFO - Epoch 13, Batch 30/222, Loss: 0.0992, Time per batch: 0.4883s
+2025-05-28 15:19:02,769 - INFO - Epoch 13, Batch 40/222, Loss: 0.0983, Time per batch: 0.4996s
+2025-05-28 15:19:07,990 - INFO - Epoch 13, Batch 50/222, Loss: 0.0995, Time per batch: 0.5041s
+2025-05-28 15:19:12,886 - INFO - Epoch 13, Batch 60/222, Loss: 0.1047, Time per batch: 0.5017s
+2025-05-28 15:19:17,716 - INFO - Epoch 13, Batch 70/222, Loss: 0.0925, Time per batch: 0.4990s

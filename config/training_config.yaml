@@ -1,0 +1,16 @@
+# Training hyperparameters
+learning_rate: 0.001
+batch_size: 64
+epochs: 200 # Maximum number of epochs to train
+device: 'cpu' # 'cuda', 'cpu', or 'auto'. 'auto' detects cuda if available.
+
+# Checkpointing
+checkpoint_dir: output/checkpoints
+checkpoint_freq: 10 # Save periodic checkpoint every X epochs
+
+# Logging
+log_freq: 10 # Log training loss every X batches
+log_dir: output/logs
+
+# Early Stopping
+early_stopping_patience: 15 # Stop training if validation loss doesn't improve for this many epochs. Set to null/None to disable.

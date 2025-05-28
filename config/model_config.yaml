@@ -1,0 +1,6 @@
+# Model architecture parameters
+vocab_size: null # Will be determined automatically during data preprocessing
+d_model: 128     # Embedding dimension / model size
+n_heads: 4       # Number of attention heads
+n_layers: 3      # Number of transformer blocks
+dropout: 0.1     # Dropout rate

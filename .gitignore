@@ -1,0 +1,36 @@
+# Environment
+.venv/
+env/
+venv/
+
+# PyTorch/Python specific
+__pycache__/
+*.pyc
+*.pth  # Ignore all PyTorch checkpoint files
+*.pt   # Ignore all generic PyTorch tensor files (like tokenized_data.pt)
+*.safetensors # Ignore SafeTensors files if you use that format later
+
+# Data
+data/raw/ # Ignore raw data
+data/processed/ # Ignore processed data (tokenized_data.pt, vocab.json, tokenizer files)
+# If you only want to ignore specific files in processed, you can be more specific:
+# data/processed/*.pt
+# data/processed/*.json # Use carefully if other small json files need tracking
+
+# Output
+output/checkpoints/ # Ignore all checkpoints
+output/evaluation_results/ # Ignore evaluation outputs
+output/logs/ # Ignore log files
+
+# Other temporary files (common)
+*.tmp
+*.swp
+*~
+.DS_Store # macOS specific
+Thumbs.db # Windows specific
+
+# Visual Studio Code
+.vscode/
+
+# ipynb history
+.ipynb_checkpoints

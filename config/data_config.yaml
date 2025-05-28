@@ -1,0 +1,8 @@
+raw_data_path: data/raw/input.txt
+processed_data_dir: data/processed
+
+# Tokenization settings
+tokenizer_type: char # 'char' for character-level
+
+# Data sequence length (context window size)
+seq_length: 128

@@ -1,0 +1,5 @@
+torch
+transformers
+PyYAML
+tqdm
+numpy

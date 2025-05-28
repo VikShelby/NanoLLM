@@ -1,0 +1,4 @@
+# Inference settings
+max_new_tokens: 100 # Maximum number of tokens to generate
+temperature: 0.8    # Sampling temperature (higher means more randomness)
+top_k: null         # If not null, sample from top K tokens
