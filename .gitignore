@@ -6,21 +6,21 @@ venv/
 # PyTorch/Python specific
 __pycache__/
 *.pyc
-*.pth  # Ignore all PyTorch checkpoint files
-*.pt   # Ignore all generic PyTorch tensor files (like tokenized_data.pt)
-*.safetensors # Ignore SafeTensors files if you use that format later
+*.pth 
+*.pt  
+*.safetensors 
 
 # Data
-data/raw/ # Ignore raw data
-data/processed/ # Ignore processed data (tokenized_data.pt, vocab.json, tokenizer files)
+data/raw/ 
+data/processed/
 # If you only want to ignore specific files in processed, you can be more specific:
 # data/processed/*.pt
 # data/processed/*.json # Use carefully if other small json files need tracking
 
 # Output
-output/checkpoints/ # Ignore all checkpoints
-output/evaluation_results/ # Ignore evaluation outputs
-output/logs/ # Ignore log files
+output/checkpoints/ 
+output/evaluation_results/ 
+output/logs/ 
 
 # Other temporary files (common)
 *.tmp
