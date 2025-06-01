@@ -17,12 +17,11 @@ const signupUser = async (req, res) => {
         let newUser;
 
         if (googleToken) {
-            // Handle Google OAuth signup
             const ticket = await client.verifyIdToken({
                 idToken: googleToken,
                 audience: process.env.GOOGLE_CLIENT_ID,
             });
-            const { name, email, picture, sub } = ticket.getPayload(); // Extract user data
+            const { name, email, picture, sub } = ticket.getPayload();
 
             const existingUser = await User.findOne({ email });
             if (existingUser) {
@@ -32,14 +31,13 @@ const signupUser = async (req, res) => {
             newUser = new User({
                 name,
                 email,
-                username: email.split("@")[0], // Generate username from email
+                username: email.split("@")[0],
                 googleId: sub,
                 profilePic: picture,
                 svg: generateSVG(name),
             });
         } 
         else {
-            // Handle Email/Password signup
             if (!name || !email || !username || !password || !storeName || !storeLocation) {
                 return res.status(400).json({ error: "All fields are required" });
             }

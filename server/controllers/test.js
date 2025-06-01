@@ -1,4 +1,3 @@
-// Import necessary modules and middleware
 const express = require('express');
 const router = express.Router();
 const { protectRoute } = require('../middlewares/protectRoute');

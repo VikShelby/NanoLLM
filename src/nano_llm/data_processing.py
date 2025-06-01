@@ -1,128 +1,185 @@
+
 import torch
 from torch.utils.data import Dataset, DataLoader
-import json
 import os
 import numpy as np
 import logging
-
-class CharTokenizer:
-    """Basic character-level tokenizer."""
-    def __init__(self, text):
-        chars = sorted(list(set(text)))
-        self.stoi = {ch: i for i, ch in enumerate(chars)} # string to integer
-        self.itos = {i: ch for i, ch in enumerate(chars)} # integer to string
-        self.vocab_size = len(chars)
-
-    def encode(self, s):
-        """Encodes a string into a list of integers."""
-        return [self.stoi[c] for c in s if c in self.stoi]
-
-    def decode(self, l):
-        """Decodes a list of integers into a string."""
-        return ''.join([self.itos[i] for i in l if i in self.itos])
-
-    def save_vocab(self, filepath):
-        """Saves the vocabulary to a JSON file."""
-        with open(filepath, 'w', encoding='utf-8') as f:
-            json.dump({'stoi': self.stoi, 'itos': self.itos}, f, ensure_ascii=False, indent=4)
-
-    @classmethod
-    def load_vocab(cls, filepath):
-        """Loads the vocabulary from a JSON file."""
-        with open(filepath, 'r', encoding='utf-8') as f:
-            vocab_data = json.load(f)
-        tokenizer = cls.__new__(cls) # Create an instance without calling __init__
-        tokenizer.stoi = vocab_data['stoi']
-        tokenizer.itos = {int(k): v for k, v in vocab_data['itos'].items()}
-        tokenizer.vocab_size = len(tokenizer.stoi)
-        return tokenizer
+import sys
 
 
-class LLMDataset(Dataset):
-    """Dataset for next-token prediction."""
-    def __init__(self, token_ids, seq_length):
-        self.token_ids = token_ids
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
+from tokenizers import Tokenizer
+
+class PretokenizedDataset(Dataset):
+    """
+    Dataset for loading pre-tokenized data from a .bin file (memory-mapped).
+    Each item returns a sequence of `seq_length` for input and `seq_length` for target.
+    """
+    def __init__(self, data_file, seq_length, block_size_for_len_calc=None):
+        super().__init__()
         self.seq_length = seq_length
 
-        # Ensure we have enough data for at least one sequence
-        if len(token_ids) < seq_length + 1:
-             raise ValueError(f"Dataset size ({len(token_ids)}) is too small for seq_length ({seq_length}). Need at least {seq_length + 1} tokens.")
+        if not os.path.exists(data_file):
+            raise FileNotFoundError(f"Data file not found: {data_file}")
+
+
+
+
+
+
+
+
+        
+        logging.info(f"Loading pretokenized data from {data_file} with mmap.")
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+        
+
+
+
+
+
+
+
+        self.token_ids = None
+        self.num_effective_samples = 0
+
+
+    def set_data(self, token_array_mmap):
+        self.token_ids = token_array_mmap
+        if len(self.token_ids) <= self.seq_length:
+            logging.warning(f"Dataset (len {len(self.token_ids)}) is too short for seq_length ({self.seq_length}). Effective samples: 0")
+            self.num_effective_samples = 0
+        else:
+            self.num_effective_samples = len(self.token_ids) - self.seq_length
+        logging.info(f"Dataset set with {len(self.token_ids)} tokens. Effective samples: {self.num_effective_samples} for seq_length {self.seq_length}")
+
 
     def __len__(self):
-        # We can create (len(token_ids) - seq_length) samples
-        return len(self.token_ids) - self.seq_length
+
+        return self.num_effective_samples
 
     def __getitem__(self, idx):
-        # Get a chunk of length seq_length + 1
+        if self.token_ids is None:
+            raise RuntimeError("Dataset not initialized with data. Call set_data() first.")
+        if idx >= self.num_effective_samples:
+            raise IndexError("Index out of bounds")
+
+
+
         chunk = self.token_ids[idx : idx + self.seq_length + 1]
-        # Input is the first seq_length tokens
+        
+
         x = torch.tensor(chunk[:-1], dtype=torch.long)
-        # Target is the next token
-        y = torch.tensor(chunk[1:], dtype=torch.long) # Predict the *next* token for each token in x
+        y = torch.tensor(chunk[1:], dtype=torch.long)
         return x, y
 
-def preprocess_and_save(config):
-    """Reads raw data, creates tokenizer, tokenizes, and saves processed data."""
-    raw_path = config['raw_data_path']
-    processed_dir = config['processed_data_dir']
-    tokenizer_type = config['tokenizer_type'] # 'char' in this example
-    seq_length = config['seq_length']
 
-    logging.info(f"Loading data from {raw_path}")
-    with open(raw_path, 'r', encoding='utf-8') as f:
-        text = f.read()
+def create_dataloaders(data_config, training_batch_size):
+    """
+    Loads the trained subword tokenizer and pre-tokenized .bin data,
+    then creates train and validation DataLoaders.
 
-    os.makedirs(processed_dir, exist_ok=True)
+    Args:
+        data_config (dict): Configuration dictionary (from data_config.yaml).
+        training_batch_size (int): Batch size for the DataLoaders.
+    """
+    processed_dir = data_config['processed_data_dir']
+    seq_length = data_config['seq_length']
 
-    if tokenizer_type == 'char':
-        tokenizer = CharTokenizer(text)
-        logging.info(f"Character tokenizer created. Vocab size: {tokenizer.vocab_size}")
-        vocab_path = os.path.join(processed_dir, 'vocab.json')
-        tokenizer.save_vocab(vocab_path)
-        logging.info(f"Vocabulary saved to {vocab_path}")
-    else:
-        raise ValueError(f"Unknown tokenizer type: {tokenizer_type}")
+    tokenizer_path = os.path.join(processed_dir, 'tokenizer.json')
+    train_bin_path = os.path.join(processed_dir, 'train.bin')
+    val_bin_path = os.path.join(processed_dir, 'val.bin')
 
-    logging.info("Tokenizing data...")
-    token_ids = tokenizer.encode(text)
-    token_ids_path = os.path.join(processed_dir, 'tokenized_data.pt')
-    torch.save(torch.tensor(token_ids, dtype=torch.long), token_ids_path)
-    logging.info(f"Tokenized data saved to {token_ids_path}")
-    logging.info(f"Total tokens: {len(token_ids)}")
+    if not os.path.exists(tokenizer_path):
+        raise FileNotFoundError(f"Tokenizer file not found: {tokenizer_path}. Run preprocess_data.py first.")
+    if not os.path.exists(train_bin_path):
+        raise FileNotFoundError(f"Train data file not found: {train_bin_path}. Run preprocess_data.py first.")
+    if not os.path.exists(val_bin_path):
+        raise FileNotFoundError(f"Validation data file not found: {val_bin_path}. Run preprocess_data.py first.")
 
-    # Basic check for dataset size feasibility
-    if len(token_ids) < seq_length + 1:
-         logging.warning(f"Total tokens ({len(token_ids)}) is less than sequence length + 1 ({seq_length + 1}). Training may not be possible.")
+    logging.info(f"Loading tokenizer from {tokenizer_path}")
+    tokenizer = Tokenizer.from_file(tokenizer_path)
+    actual_vocab_size = tokenizer.get_vocab_size()
+    logging.info(f"Tokenizer loaded. Vocab size: {actual_vocab_size}")
 
 
-def create_dataloaders(processed_dir, seq_length, batch_size):
-    """Loads processed data and creates DataLoaders."""
-    token_ids_path = os.path.join(processed_dir, 'tokenized_data.pt')
-    vocab_path = os.path.join(processed_dir, 'vocab.json')
 
-    if not os.path.exists(token_ids_path) or not os.path.exists(vocab_path):
-        raise FileNotFoundError(f"Processed data not found in {processed_dir}. Run preprocess_data.py first.")
+    dtype = np.uint16 if actual_vocab_size < 65535 else np.uint32
 
-    logging.info(f"Loading tokenized data from {token_ids_path}")
-    token_ids = torch.load(token_ids_path).tolist() # Load as list for dataset indexing
+    logging.info(f"Loading pre-tokenized data using mmap (dtype: {dtype})...")
+    try:
+        train_ids_mmap = np.memmap(train_bin_path, dtype=dtype, mode='r')
+        val_ids_mmap = np.memmap(val_bin_path, dtype=dtype, mode='r')
+    except Exception as e:
+        logging.error(f"Error memory-mapping .bin files. Ensure they exist and dtype {dtype} is correct: {e}")
+        raise
 
-    tokenizer = CharTokenizer.load_vocab(vocab_path) # Load tokenizer separately if needed later
+    logging.info(f"Train tokens via mmap: {len(train_ids_mmap)}, Validation tokens via mmap: {len(val_ids_mmap)}")
 
-    # Splitting data: Simplistic split (e.g., 90% train, 10% val)
-    # For large datasets, need a more robust split strategy (e.g., by document, not just a linear split)
-    split_idx = int(len(token_ids) * 0.9)
-    train_token_ids = token_ids[:split_idx]
-    val_token_ids = token_ids[split_idx:]
 
-    logging.info(f"Train tokens: {len(train_token_ids)}, Validation tokens: {len(val_token_ids)}")
+    train_dataset = PretokenizedDataset(data_file=train_bin_path, seq_length=seq_length)
+    train_dataset.set_data(train_ids_mmap)
 
-    train_dataset = LLMDataset(train_token_ids, seq_length)
-    val_dataset = LLMDataset(val_token_ids, seq_length)
+    val_dataset = PretokenizedDataset(data_file=val_bin_path, seq_length=seq_length)
+    val_dataset.set_data(val_ids_mmap)
+    
+    if len(train_dataset) == 0:
+        logging.warning("Train dataset is empty after processing. Check data and seq_length.")
+    if len(val_dataset) == 0:
+        logging.warning("Validation dataset is empty after processing. Check data and seq_length.")
 
-    train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
-    val_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False)
 
-    logging.info(f"Created train DataLoader with {len(train_loader)} batches of size {batch_size}")
-    logging.info(f"Created validation DataLoader with {len(val_loader)} batches of size {batch_size}")
 
-    return train_loader, val_loader, tokenizer  
+
+
+    num_workers = data_config.get('dataloader_num_workers', 0)
+    pin_memory = torch.cuda.is_available() and data_config.get('dataloader_pin_memory', True)
+
+
+    train_loader = DataLoader(
+        train_dataset,
+        batch_size=training_batch_size,
+        shuffle=True,
+        num_workers=num_workers,
+        pin_memory=pin_memory
+    )
+    val_loader = DataLoader(
+        val_dataset,
+        batch_size=training_batch_size,
+        shuffle=False,
+        num_workers=num_workers,
+        pin_memory=pin_memory
+    )
+
+    logging.info(f"Created train DataLoader with ~{len(train_loader)} batches of size {training_batch_size}")
+    logging.info(f"Created validation DataLoader with ~{len(val_loader)} batches of size {training_batch_size}")
+
+    return train_loader, val_loader, tokenizer

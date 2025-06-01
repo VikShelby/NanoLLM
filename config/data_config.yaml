@@ -1,8 +1,26 @@
+
+
 raw_data_path: data/raw/input.txt
 processed_data_dir: data/processed
 
-# Tokenization settings
-tokenizer_type: char # 'char' for character-level
 
-# Data sequence length (context window size)
-seq_length: 128
+tokenizer_engine: "bpe_bytelevel" 
+tokenizer_vocab_size: 32000
+bpe_min_frequency: 2
+bytelevel_add_prefix_space: true
+
+force_retrain_tokenizer: false
+force_retokenize_data: false
+
+
+lines_per_chunk_tokenizer_train: 100000
+lines_per_chunk_tokenize_data: 50000
+
+
+seq_length: 512
+train_val_split_ratio: 0.9
+
+
+dataloader_num_workers: 2
+
+dataloader_pin_memory: true

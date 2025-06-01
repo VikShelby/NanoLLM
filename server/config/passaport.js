@@ -3,9 +3,8 @@ const LocalStrategy = require("passport-local").Strategy;
 const GoogleStrategy = require("passport-google-oauth20").Strategy;
 const bcrypt = require("bcryptjs");
 const User = require("../models/userModel");
-const { generateTokenAndSetCookie } = require("../utils/helper/generateTokenAndSetCookie"); // JWT function
+const { generateTokenAndSetCookie } = require("../utils/helper/generateTokenAndSetCookie");
 
-// Local Strategy for Email/Password Login
 module.exports = (passport) => {
 passport.use(
   new LocalStrategy({ usernameField: "email" }, async (email, password, done) => {
@@ -26,13 +25,13 @@ passport.use(
   })
 );
 
-// Google Strategy for OAuth Login
+
 passport.use(
   new GoogleStrategy(
     {
       clientID: process.env.GOOGLE_CLIENT_ID,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-      callbackURL: "http://localhost:8080/api/auth/google/callback", // Update with your frontend URL
+      callbackURL: "http://localhost:8080/api/auth/google/callback", 
       passReqToCallback: true,
     },
     async (request, accessToken, refreshToken, profile, done) => {
@@ -44,13 +43,13 @@ passport.use(
         let isNewUser = false;
 
         if (!user) {
-          // If the user doesn't exist, create a new user
+         
           user = new User({
             name,
             email,
-            username: email.split("@")[0], // You can generate username however you'd like
+            username: email.split("@")[0], 
             profilePic: picture,
-            svg: "", // You can generate a SVG if needed
+            svg: "", 
           });
           await user.save();
           isNewUser = true;

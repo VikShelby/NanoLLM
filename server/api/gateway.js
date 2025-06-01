@@ -1,8 +1,6 @@
 const express = require('express');
 
-const storeData = {}; // In-memory storage
-
-// Server to send/store the store ID (port 8080)
+const storeData = {};
 const sendApp = express();
 sendApp.use(express.json());
 
@@ -13,15 +11,13 @@ sendApp.post('/sendStoreId', (req, res) => {
         return res.status(400).json({ error: "Both location and storeId are required" });
     }
 
-    storeData[location] = storeId; // Store the data
+    storeData[location] = storeId;
     res.json({ message: `Stored storeId ${storeId} for location ${location}` });
 });
 
 sendApp.listen(8080, () => {
     console.log("Send Server running on port 8080...");
 });
-
-// Server to get the store ID (port 5001)
 const getApp = express();
 
 getApp.get('/getStoreId/:location', (req, res) => {
